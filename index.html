@@ -223,6 +223,15 @@
   .tour-wrap{position:relative;width:100%;max-width:1017px;margin:24px auto 6px;aspect-ratio:1017/600;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#111}
   .tour-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   @media(max-width:700px){.tour-wrap{aspect-ratio:4/3}}
+
+  /* Grote uitspraak onder de fiscale tabel */
+  .fis-claim{max-width:900px;margin:30px auto 6px;text-align:center}
+  .fis-claim p{font-family:"Instrument Sans",Inter,sans-serif;font-weight:600;letter-spacing:-.035em;
+               line-height:1.12;font-size:clamp(1.45rem,3.6vw,2.3rem);color:#fff}
+  .fis-claim p em{font-style:normal;color:var(--gold)}
+  .fis-claim .onder{font-family:Inter,sans-serif;font-weight:400;letter-spacing:0;
+                    font-size:.98rem;line-height:1.6;color:rgba(255,255,255,.82);margin-top:14px;
+                    max-width:620px;margin-left:auto;margin-right:auto}
 </style>
 </head>
 <body>
@@ -473,6 +482,11 @@
         </tbody>
       </table>
     </div>
+    <div class="fis-claim">
+      <p>In Nederland moet u <em>tot wel 2% extra rendement</em> halen om netto hetzelfde over te houden als in Frankrijk.</p>
+      <p class="onder">Box 3 kost u circa 2,16% van de waarde per jaar, of er nu huur binnenkomt of niet. Dat verlies maakt u eerst goed voordat u iets verdient. In Frankrijk betaalt u pas belasting over de huur die u werkelijk ontvangt.</p>
+      <!-- BRON: box 3 2026, forfait 6,00% x tarief 36% = 2,16% van de waarde per jaar boven de vrijstelling (belastingdienst.nl). De "tot wel" dekt af dat het bedrag onder de heffingsvrije voet lager uitvalt. -->
+    </div>
     <div class="fis-note">
       <strong>Wat dit voor u betekent.</strong> Bij een verhuurde woning is de jaarlijkse Franse belasting in de regel lager dan de Nederlandse box 3-heffing over dezelfde waarde. Daar staat tegenover dat Frankrijk bij verkoop binnen 22 jaar een winstbelasting kent. Wij rekenen het voor uw situatie door; RFN accountants begeleidt uw eerste Franse aangifte.
       <!-- BRON conclusie: fiscaal fact sheet 16-9-2026 (Frankrijk/VDC-landing-onderzoek/02-fiscaal-factsheet.md). Bewust GEEN gecombineerd "netto na belasting"-percentage genoemd. -->
@@ -506,8 +520,11 @@
 </section>
 
 <!-- SECTIE: Virtuele rondleiding | VARIABELE: kans van slagen + moeite (zien zonder te reizen) -->
-<!-- SECTIE: Virtuele rondleiding | VARIABELE: kans van slagen + moeite (zien zonder te reizen) -->
-<section class="section" id="rondleiding" style="background:var(--cream)">
+<!-- VERWIJDERD op verzoek: de 3D-drone-opname wordt op locatie getoond tijdens de toelichting.
+     Terugzetten? Verwijder deze comment-regels rondom het blok hieronder.
+
+<!- - SECTIE: Virtuele rondleiding | VARIABELE: kans van slagen + moeite (zien zonder te reizen) - ->
+<section class="section" id="rondleiding" style="background:var(- -cream)">
   <div class="container center">
     <p class="eyebrow">Virtuele rondleiding</p>
     <h2>Vlieg zelf over Domaine de Lanzac, voordat u ergens naartoe gaat</h2>
@@ -515,9 +532,10 @@
     <div class="tour-wrap">
       <iframe src="https://splatware.com/capture/VHUjaeAZic0HOHwsEsMC" title="Driedimensionale drone-opname van Domaine de Lanzac" frameborder="0" allowfullscreen loading="lazy"></iframe>
     </div>
-    <p class="risk">Sleep om te draaien, scroll om in te zoomen. Werkt het niet? <a href="https://splatware.com/capture/VHUjaeAZic0HOHwsEsMC" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">Open de rondleiding in een nieuw tabblad</a>.</p>
+    <p class="risk">Sleep om te draaien, scroll om in te zoomen. Werkt het niet? <a href="https://splatware.com/capture/VHUjaeAZic0HOHwsEsMC" target="_blank" rel="noopener" style="color:var(- -green);font-weight:600">Open de rondleiding in een nieuw tabblad</a>.</p>
   </div>
 </section>
+-->
 
 <!-- SECTIE: Bezwaren en FAQ | VARIABELE: moeite en risico -->
 <section class="section faq" id="faq" style="background:#fff">
