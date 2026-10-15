@@ -256,6 +256,11 @@
   .galerij{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 6px}
   @media(min-width:760px){.galerij{grid-template-columns:1fr 1fr}}
   .galerij .foto{aspect-ratio:3/2}
+
+  .kaart{margin:26px 0 4px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#F3F1EC}
+  .kaart img{display:block;width:100%;height:auto}
+  .kaart-onder{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:12px;font-size:.9rem;color:var(--muted)}
+  .kaart-onder b{color:var(--text);font-weight:600}
 </style>
 </head>
 <body>
@@ -568,6 +573,18 @@
       <div class="foto"><img src="img/ddl-rocamadour.jpg" alt="Winkelstraat in Rocamadour met bezoekers tussen de middeleeuwse huizen" loading="lazy"></div>
     </div>
     <p class="bijschrift">Het park, het dalzicht en Rocamadour op 27 kilometer.</p>
+
+    <div class="kaart">
+      <img src="img/kaart-ligging.svg" alt="Kaart van de omgeving met Domaine de Lanzac, Souillac, Rocamadour, Sarlat, Brive, Gourdon, Martel en Cahors" loading="lazy">
+    </div>
+    <div class="kaart-onder">
+      <span><b>Souillac</b> 7 km</span>
+      <span><b>Rocamadour</b> 27 km</span>
+      <span><b>Sarlat</b> 28 km</span>
+      <span><b>Brive</b> 44 km, met vliegveld op 27 km</span>
+      <span><b>Utrecht</b> ongeveer 1.000 km, 10,5 uur rijden</span>
+    </div>
+    <!-- BRON afstanden: OSRM-routering op de parkcoordinaten (44,8597 N / 1,4717 O), feitencheck 7-10-2026. Geen opgave van FranceComfort zelf. -->
     <!-- BRON beeld: eigen fotoshoot Domaine de Lanzac mei 2026 en DDL-ROCM (OneDrive, Maison Pure - DDL). -->
     <ul class="fac">
       <!-- BRON: FranceComfort parkpagina Domaine de Lanzac, "over het park" en "praktische informatie", geraadpleegd 7-10-2026. Let op: DDL heeft GEEN waterglijbanen (dat is Village des Cigales), geen mini store en is niet autovrij. -->
