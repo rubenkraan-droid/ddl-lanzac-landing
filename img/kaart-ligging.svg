@@ -1,20 +1,27 @@
-<svg viewBox="0 0 820 620" role="img" aria-label="Kaart van de omgeving met Domaine de Lanzac, Souillac, Rocamadour, Sarlat, Brive, Gourdon, Martel en Cahors" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 820 620" role="img" aria-label="Kaart van Frankrijk met Domaine de Lanzac in het zuidwesten, en de omgeving met Souillac, Rocamadour, Sarlat, Brive, Gourdon, Martel en Cahors" xmlns="http://www.w3.org/2000/svg">
   <rect width="820" height="620" fill="#F3F1EC"/>
-  <text x="40" y="40" font-size="13" letter-spacing="2.8" fill="#9AA0A6">DE OMGEVING</text>
-  <g transform="translate(768,46)" fill="#B9C2B8">
+  <g transform="translate(44,72)">
+    <text x="0" y="-18" font-size="13" letter-spacing="2.8" fill="#9AA0A6">FRANKRIJK</text>
+    <path d="M 106.7,0.0 L 98.9,1.7 L 87.4,24.1 L 72.9,33.4 L 42.3,28.4 L 41.1,51.6 L 0.0,52.1 L 6.0,70.1 L 24.8,76.2 L 38.2,81.6 L 44.7,98.3 L 54.1,105.7 L 55.9,117.4 L 53.8,138.2 L 44.7,165.8 L 59.9,176.4 L 81.4,180.8 L 93.2,185.1 L 108.9,186.4 L 117.3,172.5 L 126.5,165.6 L 142.9,164.3 L 151.5,167.7 L 159.8,171.6 L 175.1,162.3 L 183.7,157.3 L 175.1,144.7 L 170.3,133.0 L 172.8,120.2 L 173.9,110.9 L 163.1,104.8 L 162.4,92.9 L 175.8,77.9 L 184.6,75.5 L 187.0,53.2 L 190.0,43.2 L 166.4,40.1 L 160.6,34.3 L 143.8,22.8 L 133.5,15.8 L 117.1,8.7 L 106.7,0.0 Z" fill="#E4E7E1" stroke="#A9B6A8" stroke-width="1.4" stroke-linejoin="round"/>
+    <line x1="93.2" y1="133.9" x2="151.2" y2="187.9" stroke="#C9A24A" stroke-width="1.2"/>
+    <circle cx="93.2" cy="133.9" r="9" fill="#E0A93B" opacity=".25"/>
+    <circle cx="93.2" cy="133.9" r="4.5" fill="#E0A93B" stroke="#fff" stroke-width="1.6"/>
+    <text x="155.2" y="192.9" font-size="13" fill="#5B6168">Domaine de Lanzac</text>
+  </g>
+  <g transform="translate(768,46)">
     <path d="M0,-14 L5,6 L0,1 L-5,6 Z" fill="#4E5C4C"/>
     <text x="0" y="22" text-anchor="middle" font-size="12" fill="#9AA0A6">N</text>
   </g>
-  <line x1="435.9" y1="271.9" x2="437.8" y2="249.0" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="435.9" y1="271.9" x2="506.0" y2="312.6" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="435.9" y1="271.9" x2="314.0" y2="251.7" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="435.9" y1="271.9" x2="465.3" y2="70.0" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="435.9" y1="271.9" x2="421.6" y2="550.0" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/>
-  <circle cx="437.8" cy="249.0" r="4.5" fill="#4E5C4C"/><text x="450.8" y="254.0" text-anchor="start" font-size="16" fill="#2B2B2B">Souillac <tspan fill="#9AA0A6">7 km</tspan></text><circle cx="506.0" cy="312.6" r="4.5" fill="#4E5C4C"/><text x="519.0" y="317.6" text-anchor="start" font-size="16" fill="#2B2B2B">Rocamadour <tspan fill="#9AA0A6">27 km</tspan></text><circle cx="314.0" cy="251.7" r="4.5" fill="#4E5C4C"/><text x="301.0" y="256.7" text-anchor="end" font-size="16" fill="#2B2B2B">Sarlat <tspan fill="#9AA0A6">28 km</tspan></text><circle cx="465.3" cy="70.0" r="4.5" fill="#4E5C4C"/><text x="478.3" y="75.0" text-anchor="start" font-size="16" fill="#2B2B2B">Brive <tspan fill="#9AA0A6">44 km</tspan></text><circle cx="392.0" cy="354.9" r="4.5" fill="#4E5C4C"/><text x="379.0" y="359.9" text-anchor="end" font-size="16" fill="#2B2B2B">Gourdon</text><circle cx="502.0" cy="219.8" r="4.5" fill="#4E5C4C"/><text x="515.0" y="224.8" text-anchor="start" font-size="16" fill="#2B2B2B">Martel</text><circle cx="421.6" cy="550.0" r="4.5" fill="#4E5C4C"/><text x="408.6" y="555.0" text-anchor="end" font-size="16" fill="#2B2B2B">Cahors <tspan fill="#9AA0A6">58 km</tspan></text>
-  <circle cx="435.9" cy="271.9" r="18" fill="#E0A93B" opacity=".20"/>
-  <circle cx="435.9" cy="271.9" r="8.5" fill="#E0A93B" stroke="#fff" stroke-width="2.5"/>
-  <text x="435.9" y="305.9" text-anchor="middle" font-size="18" font-weight="700" fill="#4E5C4C">Domaine de Lanzac</text>
-  <g transform="translate(40,580)">
-    <line x1="0" y1="0" x2="60.8" y2="0" stroke="#5B6168" stroke-width="2"/>
+  <line x1="475.5" y1="272.6" x2="477.3" y2="250.1" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="475.5" y1="272.6" x2="544.4" y2="312.6" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="475.5" y1="272.6" x2="355.6" y2="252.7" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="475.5" y1="272.6" x2="504.4" y2="74.0" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/><line x1="475.5" y1="272.6" x2="461.4" y2="546.0" stroke="#B9C2B8" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <circle cx="477.3" cy="250.1" r="4.5" fill="#4E5C4C"/><text x="490.3" y="255.1" text-anchor="start" font-size="16" fill="#2B2B2B">Souillac <tspan fill="#9AA0A6">7 km</tspan></text><circle cx="544.4" cy="312.6" r="4.5" fill="#4E5C4C"/><text x="557.4" y="317.6" text-anchor="start" font-size="16" fill="#2B2B2B">Rocamadour <tspan fill="#9AA0A6">27 km</tspan></text><circle cx="355.6" cy="252.7" r="4.5" fill="#4E5C4C"/><text x="342.6" y="257.7" text-anchor="end" font-size="16" fill="#2B2B2B">Sarlat <tspan fill="#9AA0A6">28 km</tspan></text><circle cx="504.4" cy="74.0" r="4.5" fill="#4E5C4C"/><text x="517.4" y="79.0" text-anchor="start" font-size="16" fill="#2B2B2B">Brive <tspan fill="#9AA0A6">44 km</tspan></text><circle cx="432.3" cy="354.1" r="4.5" fill="#4E5C4C"/><text x="419.3" y="359.1" text-anchor="end" font-size="16" fill="#2B2B2B">Gourdon</text><circle cx="540.5" cy="221.3" r="4.5" fill="#4E5C4C"/><text x="553.5" y="226.3" text-anchor="start" font-size="16" fill="#2B2B2B">Martel</text><circle cx="461.4" cy="546.0" r="4.5" fill="#4E5C4C"/><text x="448.4" y="551.0" text-anchor="end" font-size="16" fill="#2B2B2B">Cahors <tspan fill="#9AA0A6">58 km</tspan></text>
+  <circle cx="475.5" cy="272.6" r="18" fill="#E0A93B" opacity=".20"/>
+  <circle cx="475.5" cy="272.6" r="8.5" fill="#E0A93B" stroke="#fff" stroke-width="2.5"/>
+  <text x="475.5" y="306.6" text-anchor="middle" font-size="18" font-weight="700" fill="#4E5C4C">Domaine de Lanzac</text>
+  <g transform="translate(44,580)">
+    <line x1="0" y1="0" x2="59.7" y2="0" stroke="#5B6168" stroke-width="2"/>
     <line x1="0" y1="-5" x2="0" y2="5" stroke="#5B6168" stroke-width="2"/>
-    <line x1="60.8" y1="-5" x2="60.8" y2="5" stroke="#5B6168" stroke-width="2"/>
-    <text x="30.4" y="-11" text-anchor="middle" font-size="13" fill="#5B6168">10 km</text>
+    <line x1="59.7" y1="-5" x2="59.7" y2="5" stroke="#5B6168" stroke-width="2"/>
+    <text x="29.8" y="-11" text-anchor="middle" font-size="13" fill="#5B6168">10 km</text>
   </g>
   <text x="780" y="584" text-anchor="end" font-size="13" fill="#9AA0A6">Departement Lot. Posities hemelsbreed, afstanden over de weg</text>
 </svg>
