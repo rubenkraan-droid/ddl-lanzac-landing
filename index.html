@@ -232,6 +232,16 @@
   .fis-claim .onder{font-family:Inter,sans-serif;font-weight:400;letter-spacing:0;
                     font-size:.98rem;line-height:1.6;color:rgba(255,255,255,.82);margin-top:14px;
                     max-width:620px;margin-left:auto;margin-right:auto}
+
+  /* Wat het u oplevert: de droomuitkomst, niet de rekensom */
+  .droom{display:grid;grid-template-columns:1fr;gap:18px;margin-top:30px}
+  @media(min-width:820px){.droom{grid-template-columns:repeat(3,1fr)}}
+  .droom-kaart{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px 22px}
+  .droom-kaart h3{font-size:1.12rem;margin-bottom:8px}
+  .droom-kaart p{color:var(--muted);font-size:.97rem;line-height:1.62}
+  .droom-slot{margin-top:26px;background:var(--green);color:#fff;border-radius:14px;padding:22px 24px;
+              font-size:1.05rem;line-height:1.6}
+  .droom-slot strong{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -292,6 +302,32 @@
       <!-- BRON oplevering: Ruben, 16-9-2026 ("oplevering kan snel"). BEWIJS NODIG: indicatieve oplevermaand. -->
       <div><strong>Snel</strong><span>op te leveren: geen jaren wachten op nieuwbouw</span></div>
     </div>
+  </div>
+</section>
+
+<!-- SECTIE: Wat het u oplevert | VARIABELE: droomuitkomst -->
+<section class="section" id="droom" style="background:var(--cream)">
+  <div class="container">
+    <p class="eyebrow">Wat u ervoor terugkrijgt</p>
+    <h2>Het is niet alleen een belegging. Het is uw zomer, elk jaar opnieuw.</h2>
+    <p class="lead">Een rendement van 5 tot 7% is de ene helft van het verhaal. De andere helft is dat u een sleutel in uw zak heeft van een huis in Zuid-Frankrijk, op eigen grond, met de Dordogne-vallei voor uw terras.</p>
+
+    <div class="droom">
+      <div class="droom-kaart">
+        <h3>U boekt niet meer, u rijdt gewoon</h3>
+        <p>Eigen gebruik is mogelijk in overleg met FranceComfort, tegen alleen de verbruikskosten. Geen zoeken, geen volgeboekte weken, geen onderhandelen over een annuleringsregeling. U pakt de auto en rijdt naar uw eigen voordeur.</p>
+      </div>
+      <div class="droom-kaart">
+        <h3>Een ochtend die nergens heen hoeft</h3>
+        <p>Vers brood halen bij de bakkerij op het park, koffie op het terras met de vallei, de rivier en de rotskliffen ervoor. En dan pas bedenken wat u die dag gaat doen. Tien zonuren per dag in de zomer, in oktober nog twintig graden.</p>
+      </div>
+      <div class="droom-kaart">
+        <h3>De plek waar iedereen terugkomt</h3>
+        <p>Rocamadour op een half uur, Sarlat met zijn markt net zo ver, kanoen op de Dordogne en de wijngaarden van Cahors verderop. Kinderen die het park uit hun hoofd kennen, en later hun kinderen weer.</p>
+      </div>
+    </div>
+
+    <p class="droom-slot">En de weken dat u er zelf niet bent? Dan staat het huis niet leeg. <strong>FranceComfort verhuurt het, en uw geld werkt door.</strong> Dat is het verschil met een tweede huis dat alleen maar geld kost.</p>
   </div>
 </section>
 
@@ -630,6 +666,7 @@
       </div>
       <div>
         <h4>Op deze pagina</h4>
+        <p><a href="#droom">Wat u ervoor terugkrijgt</a></p>
         <p><a href="#vergelijking">Nederland vs. Frankrijk</a></p>
         <p><a href="#aanbod">Het aanbod</a></p>
         <p><a href="#fiscaal">Belastingvoordelen</a></p>
