@@ -7,7 +7,7 @@
 <meta name="description" content="Domaine de Lanzac ligt boven de Dordogne-vallei in departement Lot, tussen Rocamadour en Sarlat. Achtendertig bestaande woningen en negentien nieuwbouw, op eigen grond, verhuurd via FranceComfort, Nederlandstalig begeleid. Bekijk het park in een driedimensionale drone-opname.">
 <meta property="og:title" content="Domaine de Lanzac: uw geld werkt harder in Frankrijk">
 <meta property="og:description" content="Zevenenvijftig woningen op een heuveltop boven de Dordogne-vallei, tussen Rocamadour en Sarlat. Vlieg er zelf overheen voordat u ergens naartoe gaat.">
-<meta property="og:image" content="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5df7d61097b8119520833f.png">
+<meta property="og:image" content="https://rubenkraan-droid.github.io/ddl-lanzac-landing/img/ddl-park-luchtfoto.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -76,7 +76,7 @@
 
   /* Hero */
   .hero{position:relative;color:#fff;min-height:calc(100vh - 64px);display:flex;align-items:center;overflow:hidden}
-  .hero-bg{position:absolute;inset:0;background-image:url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1800/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5df7d61097b8119520833f.png');background-size:cover;background-position:center}
+  .hero-bg{position:absolute;inset:0;background-image:url('img/ddl-park-luchtfoto.jpg');background-size:cover;background-position:center}
   .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,30,12,.55) 0%,rgba(20,30,12,.7) 100%)}
   .hero-inner{position:relative;z-index:2;padding:48px 0 40px}
   .hero h1{color:#fff;max-width:820px}
@@ -242,6 +242,16 @@
   .droom-slot{margin-top:26px;background:var(--green);color:#fff;border-radius:14px;padding:22px 24px;
               font-size:1.05rem;line-height:1.6}
   .droom-slot strong{color:var(--gold)}
+
+  /* Echte parkfoto's uit de fotoshoot van mei 2026 */
+  .foto{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--greybg)}
+  .foto img{display:block;width:100%;height:100%;object-fit:cover}
+  .droom-foto{margin-top:28px;aspect-ratio:16/7}
+  @media(max-width:700px){.droom-foto{aspect-ratio:4/3}}
+  .parkband{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 4px}
+  @media(min-width:760px){.parkband{grid-template-columns:3fr 2fr}}
+  .parkband .foto{aspect-ratio:16/10}
+  .bijschrift{margin-top:10px;font-size:.84rem;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -266,7 +276,7 @@
 
 <!-- SECTIE: Above the fold | VARIABELE: droomuitkomst + kans van slagen + tijdsverloop + moeite/risico -->
 <section class="hero" id="top">
-  <div class="hero-bg" role="img" aria-label="Domaine de Lanzac in de Dordogne, luchtfoto met uitzicht over de vallei"></div>
+  <div class="hero-bg" role="img" aria-label="Luchtfoto van Domaine de Lanzac op de heuveltop, met de privezwembaden en de vallei"></div>
   <div class="hero-overlay"></div>
   <div class="container hero-inner">
     <p class="eyebrow">Domaine de Lanzac · Dordogne-vallei · Maison Pure</p>
@@ -326,6 +336,11 @@
         <p>Rocamadour op een half uur, Sarlat met zijn markt net zo ver, kanoen op de Dordogne en de wijngaarden van Cahors verderop. Kinderen die het park uit hun hoofd kennen, en later hun kinderen weer.</p>
       </div>
     </div>
+
+    <div class="foto droom-foto">
+      <img src="img/ddl-privezwembad.jpg" alt="Privezwembad bij een woning op Domaine de Lanzac, gezien vanaf een ligbed tussen de eiken" loading="lazy">
+    </div>
+    <p class="bijschrift">Een privezwembad bij een van de woningen op het park. Fotoshoot Domaine de Lanzac, mei 2026.</p>
 
     <p class="droom-slot">En de weken dat u er zelf niet bent? Dan staat het huis niet leeg. <strong>FranceComfort verhuurt het, en uw geld werkt door.</strong> Dat is het verschil met een tweede huis dat alleen maar geld kost.</p>
   </div>
@@ -535,9 +550,11 @@
     <h2>Zevenenvijftig woningen op een heuveltop, met uitzicht over de Dordogne-vallei</h2>
     <p class="lead">Uitzicht over de vallei met de rivier, de rotskliffen en de kasteeltjes. Souillac ligt op 7 kilometer, Rocamadour op 27 en Sarlat op 28. Rocamadour alleen al trok in 2024 bijna 1,6 miljoen bezoekers.</p>
     <!-- BEWIJS NODIG: exacte ligging en adres van Domaine de Lanzac bevestigen op de FranceComfort-parkpagina. -->
-    <!-- BEELD: publieke DDL-foto's staan op www.francecomfort.com/l/nl/library/download/ (zwembad met vallei-uitzicht,
-         restaurantterras, animatie, speeltuin) en op domainedelanzac.nl/sites/default/files/. Rechten regelen,
-         dan hier een beeldband van twee foto's plaatsen. -->
+    <div class="parkband">
+      <div class="foto"><img src="img/ddl-parkstraat.jpg" alt="Straat op Domaine de Lanzac met vrijstaande stenen woningen en aangelegde tuinen" loading="lazy"></div>
+      <div class="foto"><img src="img/ddl-vallei.jpg" alt="Domaine de Lanzac vanuit de lucht, op de heuvel boven de Dordogne-vallei" loading="lazy"></div>
+    </div>
+    <!-- BRON beeld: eigen fotoshoot Domaine de Lanzac, mei 2026 (OneDrive, Maison Pure - DDL / Foto's re-sale DDL / LANZAC / WEB). -->
     <ul class="fac">
       <!-- BRON: FranceComfort parkpagina Domaine de Lanzac, "over het park" en "praktische informatie", geraadpleegd 7-10-2026. Let op: DDL heeft GEEN waterglijbanen (dat is Village des Cigales), geen mini store en is niet autovrij. -->
       <li>Drie zwembaden, waaronder een peuterbad, open van eind april tot eind september</li>
