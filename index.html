@@ -281,6 +281,16 @@
   .zeker-k{border-left:3px solid var(--gold);padding:4px 0 4px 18px}
   .zeker-k h3{font-size:1.1rem;margin-bottom:7px}
   .zeker-k p{color:var(--muted);font-size:.96rem;line-height:1.62}
+
+  /* Woninggalerij */
+  .galerij{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
+  @media(min-width:620px){.galerij{grid-template-columns:1fr 1fr}}
+  @media(min-width:1040px){.galerij{grid-template-columns:repeat(3,1fr)}}
+  .galerij figure{position:relative;margin:0;aspect-ratio:3/2;border-radius:14px;overflow:hidden;
+                  border:1px solid var(--line);background:var(--greybg)}
+  .galerij img{display:block;width:100%;height:100%;object-fit:cover}
+  .galerij figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;color:#fff;
+       font-size:.85rem;line-height:1.35;background:linear-gradient(transparent,rgba(20,24,20,.78))}
 </style>
 </head>
 <body>
@@ -480,6 +490,19 @@
     </div>
 
 <p class="risk" style="margin-top:18px">Nieuwbouwprijzen zijn vrij op naam en exclusief btw; de btw is bij verhuur terug te vorderen. Inventaris en het aircopakket komen daar nog bij. De bestaande woning op nummer 33 is kosten koper en exclusief opknapwerkzaamheden. De plattegronden en de indeling per woning ontvangt u in de brochure en nemen wij op 7 november met u door. Opties: een privezwembad van 6 bij 3 meter met travertin terras, een hottub inclusief fundering en aansluiting, en een aircopakket.</p>
+
+    <div class="galerij">
+      <figure><img src="img/ddl-41-woonkamer.jpg" alt="Woonkamer van nummer 41 met travertin vloer en schuifpui naar het terras met vallei-uitzicht" loading="lazy"><figcaption>Nummer 41, woonkamer met dalzicht</figcaption></figure>
+      <figure><img src="img/ddl-41-woonkamer-terras.jpg" alt="Woonkamer van nummer 41 met zicht op het overdekte terras en de eettafel buiten" loading="lazy"><figcaption>Nummer 41, zicht op het overdekte terras</figcaption></figure>
+      <figure><img src="img/ddl-woning-terras.jpg" alt="Woning op Domaine de Lanzac met overdekt terras op palen en een privezwembad in de tuin" loading="lazy"><figcaption>Overdekt terras, met het zwembad eronder</figcaption></figure>
+      <figure><img src="img/ddl-woning-wei.jpg" alt="Vrijstaande woning op Domaine de Lanzac met privezwembad aan de rand van het park" loading="lazy"><figcaption>Aan de rand van het park, met eigen zwembad</figcaption></figure>
+      <figure><img src="img/ddl-privezwembad.jpg" alt="Privezwembad bij een woning op Domaine de Lanzac, gezien vanaf een ligbed tussen de eiken" loading="lazy"><figcaption>Vanaf het ligbed, tussen de eiken</figcaption></figure>
+      <figure><img src="img/ddl-woning-zwembad.jpg" alt="Privezwembad met travertin terras bij een woning op Domaine de Lanzac" loading="lazy"><figcaption>Privezwembad met travertin terras</figcaption></figure>
+      <figure><img src="img/ddl-impressie-nieuwbouw.jpg" alt="Impressie van nieuwbouwwoningen op Domaine de Lanzac, elk met een eigen zwembad" loading="lazy"><figcaption>Impressie van de nieuwbouw</figcaption></figure>
+      <figure><img src="img/ddl-impressie-gezin.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy"><figcaption>Impressie van het gebruik</figcaption></figure>
+      <figure><img src="img/ddl-park-luchtfoto.jpg" alt="Luchtfoto van Domaine de Lanzac op de heuveltop, met de privezwembaden en de vallei" loading="lazy"><figcaption>Het park vanuit de lucht</figcaption></figure>
+    </div>
+    <p class="bijschrift">Foto&#39;s van Domaine de Lanzac, eigen opnames. De twee beelden met het bijschrift impressie zijn geen foto.</p>
 
   </div>
 </section>
