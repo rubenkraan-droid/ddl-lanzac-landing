@@ -189,7 +189,8 @@
   .form-card h3{color:var(--green)}
   .form-card .sub{color:var(--muted);font-size:.94rem;margin-bottom:14px}
   .placeholder{border:2px dashed var(--gold);border-radius:10px;padding:22px;text-align:center;color:var(--muted);font-size:.9rem;background:var(--cream)}
-  .after{margin-top:14px;background:var(--cream);border-radius:10px;padding:14px 16px;font-size:.9rem}
+  .after{margin:0 0 16px;background:var(--cream);border-left:3px solid var(--gold);
+         border-radius:0 10px 10px 0;padding:14px 16px;font-size:.92rem}
   .after strong{display:block;color:var(--green);margin-bottom:6px}
   .after ol{padding-left:18px;color:var(--muted)}
   .after li{margin-bottom:4px}
@@ -224,14 +225,15 @@
   .tour-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   @media(max-width:700px){.tour-wrap{aspect-ratio:4/3}}
 
-  /* Grote uitspraak onder de fiscale tabel */
-  .fis-claim{max-width:900px;margin:30px auto 6px;text-align:center}
+  /* Grote uitspraak over het fiscale verschil */
+  .fis-claim{max-width:900px;margin:34px auto 0;text-align:center;background:var(--green);
+             border-radius:16px;padding:34px 28px 30px}
   .fis-claim p{font-family:"Instrument Sans",Inter,sans-serif;font-weight:600;letter-spacing:-.035em;
-               line-height:1.12;font-size:clamp(1.45rem,3.6vw,2.3rem);color:#fff}
+               line-height:1.12;font-size:clamp(1.4rem,3.4vw,2.15rem);color:#fff}
   .fis-claim p em{font-style:normal;color:var(--gold)}
   .fis-claim .onder{font-family:Inter,sans-serif;font-weight:400;letter-spacing:0;
-                    font-size:.98rem;line-height:1.6;color:rgba(255,255,255,.82);margin-top:14px;
-                    max-width:620px;margin-left:auto;margin-right:auto}
+                    font-size:.97rem;line-height:1.6;color:rgba(255,255,255,.84);margin-top:14px;
+                    max-width:640px;margin-left:auto;margin-right:auto}
 
   /* Wat het u oplevert: de droomuitkomst, niet de rekensom */
   .droom{display:grid;grid-template-columns:1fr;gap:18px;margin-top:30px}
@@ -261,6 +263,24 @@
   .kaart img{display:block;width:100%;height:auto}
   .kaart-onder{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:12px;font-size:.9rem;color:var(--muted)}
   .kaart-onder b{color:var(--text);font-weight:600}
+
+  /* Vier uitgelichte woningen */
+  .woningen{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px}
+  @media(min-width:620px){.woningen{grid-template-columns:1fr 1fr}}
+  @media(min-width:980px){.woningen{grid-template-columns:repeat(4,1fr)}}
+  .won{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:22px 20px}
+  .won.nieuw{border-color:#E6D5AE;background:#FDFBF6}
+  .won-nr{display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+  .won h3{font-size:1.3rem;margin:6px 0 2px}
+  .won-t{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+  .won-s{list-style:none;font-size:.93rem;color:var(--text)}
+  .won-s li{padding:5px 0;border-top:1px solid var(--line)}
+
+  .zeker{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}
+  @media(min-width:860px){.zeker{grid-template-columns:repeat(3,1fr)}}
+  .zeker-k{border-left:3px solid var(--gold);padding:4px 0 4px 18px}
+  .zeker-k h3{font-size:1.1rem;margin-bottom:7px}
+  .zeker-k p{color:var(--muted);font-size:.96rem;line-height:1.62}
 </style>
 </head>
 <body>
@@ -303,7 +323,7 @@
       <!-- BRON: Zoover 9.1 uit 108 beoordelingen op de listing francecomfort-domaine-de-lanzac, geraadpleegd 7-10-2026, met Gouden Zoover award. FranceComfort toont zelf 9,2. Let op: Google Maps staat op 4,1 uit 5 (172 reviews) en TripAdvisor op 3,5 uit 5 (53). Alleen de 9,x noemen is selectief; daarom staat de bron er hier expliciet bij. -->
       <div class="proof-item"><strong>9,1</strong><span>Zoover, uit 108 beoordelingen</span></div>
       
-      <div class="proof-item"><strong>Vanaf &euro;181.500</strong><span>kosten koper</span></div>
+      <div class="proof-item"><strong>Nederlandstalig</strong><span>van aankoop tot verhuur</span></div>
       <div class="proof-item"><strong>Eigen grond</strong><span>volle eigendom, geen erfpacht</span></div>
     </div>
   </div>
@@ -329,7 +349,7 @@
   <div class="container">
     <p class="eyebrow">Wat u ervoor terugkrijgt</p>
     <h2>Het is niet alleen een belegging. Het is uw zomer, elk jaar opnieuw.</h2>
-    <p class="lead">Een rendement van 5 tot 7% is de ene helft van het verhaal. De andere helft is dat u een sleutel in uw zak heeft van een huis in Zuid-Frankrijk, op eigen grond, met de Dordogne-vallei voor uw terras.</p>
+    <p class="lead">Een tweede huis dat voor u werkt in de weken dat u er niet bent. En in de weken dat u er wel bent: een sleutel in uw zak van een huis in Zuid-Frankrijk, op eigen grond, met de Dordogne-vallei voor uw terras.</p>
 
     <div class="droom">
       <div class="droom-kaart">
@@ -351,7 +371,7 @@
     </div>
     <p class="bijschrift">Impressie van een woning met privezwembad op Domaine de Lanzac.</p>
 
-    <p class="droom-slot">En de weken dat u er zelf niet bent? Dan staat het huis niet leeg. <strong>FranceComfort verhuurt het, en uw geld werkt door.</strong> Dat is het verschil met een tweede huis dat alleen maar geld kost.</p>
+    <p class="droom-slot">En de weken dat u er zelf niet bent? Dan staat het huis niet leeg. <strong>FranceComfort verhuurt het, en de woning draagt zichzelf.</strong> Dat is het verschil met een tweede huis dat alleen maar geld kost.</p>
   </div>
 </section>
 
@@ -390,6 +410,12 @@
         </ul>
       </div>
     </div>
+    <div class="fis-claim">
+      <p>In Nederland moet u <em>tot wel 2% extra rendement</em> halen om netto hetzelfde over te houden als in Frankrijk.</p>
+      <p class="onder">Box 3 kost u circa 2,16% van de waarde per jaar, of er nu huur binnenkomt of niet. Dat verlies maakt u eerst goed voordat u iets verdient. In Frankrijk betaalt u pas belasting over de huur die u werkelijk ontvangt.</p>
+      <!-- BRON: box 3 2026, forfait 6,00% x tarief 36% = 2,16% van de waarde per jaar boven de vrijstelling (belastingdienst.nl). De "tot wel" dekt af dat het bedrag onder de heffingsvrije voet lager uitvalt. -->
+    </div>
+
   </div>
 </section>
 
@@ -397,107 +423,66 @@
 <section class="section" id="aanbod" style="background:#fff">
   <div class="container">
     <p class="eyebrow">Het aanbod</p>
-    <h2>Stenen villa&#39;s van 85 tot 140 vierkante meter, op eigen grond</h2>
-    <p class="lead">Achtendertig bestaande woningen en negentien nieuwbouw, voor vier, zes of acht personen. U koopt de grond mee, de woning is van steen en de inventaris zit erbij. Bij een deel is een verwarmd privezwembad of jacuzzi mogelijk, en dat verhoogt de huurprijs, en dus het rendement voor u als eigenaar.</p>
-    <!-- BRON beschikbaarheid: domainedelanzac.nl/DDL, geraadpleegd 7-10-2026 (Cinsault 2, Merlot 4, Syrah 2, Carignan 1). -->
+    <h2>Vier woningen die wij nu aanbieden</h2>
+    <p class="lead">Wij lichten op dit moment vier woningen uit: nummer 33, een bestaande Syrah, en de nieuwbouw op 39, 40 en 41. Allemaal op eigen grond, traditioneel gebouwd, met een hottub of een privezwembad als optie. Op het park staan daarnaast 38 bestaande woningen en 19 nieuwbouwkavels.</p>
+    <!-- BRON: Prijslijst Domaine de Lanzac 28-5-2026 (OneDrive, Maison Pure - DDL / Prijslijst).
+         Nr. 33 Syrah 6 pers, kavel 396 m2, bestaand geschakeld, hottub mogelijk, 213.000 euro.
+         Nr. 39 Bungalow 6 pers, kavel 376 m2, nieuwbouw geschakeld, hottub mogelijk, 257.000 euro.
+         Nr. 40 Bungalow 6 pers, kavel 249 m2, nieuwbouw geschakeld, hottub mogelijk, 241.000 euro.
+         Nr. 41 stond op ONDER BOD.
+         BEWIJS NODIG (Toine, 16-10-2026): die lijst gold tot 30-9-2026 en 39/40/41 hebben inmiddels
+         andere prijzen. Actuele prijzen, benamingen en indelingen opvragen bij Ruben of Alec.
+         Tot die tijd staan er bewust GEEN prijzen en GEEN slaapkameraantallen op de pagina.
+         De m2 op de prijslijst is de kavelgrootte, niet het woonoppervlak. -->
 
-    <div class="offer">
-      <div class="offer-card">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5df7d6bc0b1f5d2ea5266b.png" alt="Villa op Domaine de Lanzac met terras en uitzicht over de vallei" loading="lazy">
-        <div class="offer-body">
-          <span class="badge blue">Cinsault, 140 m2</span>
-          <h3>De Cinsault: 140 vierkante meter, vier slaapkamers</h3>
-          <p>Het ruimste type: 140 m2 op een perceel van 330, met vier slaapkamers, twee badkamers en energielabel A. Instapklaar, inclusief inventaris.</p>
-          
-          <div class="kavels">
-            
-            <div class="kavel"><span class="nr">Kavel 6</span><div class="price">&euro;218.500</div><small>k.k. · 140 m2 · 4 slaapkamers</small></div>
-            <div class="kavel"><span class="nr">Kavel 35</span><div class="price">&euro;218.500</div><small>k.k. · 140 m2 · 4 slaapkamers</small></div>
-          </div>
-          <div class="proof">Actuele prijzen, plattegronden en beschikbaarheid vindt u op <a href="https://maisonpurevacance.com" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">maisonpurevacance.com</a>. Beschikbaarheid onder voorbehoud.
-          <!-- LET OP: maisonpurevacance.com is nog niet live (opgave Ruben 15-10-2026). Controleren zodra de site in de lucht is. -->  </div>
-          <!-- BEWIJS NODIG: foto van de werkelijk beschikbare woning; dit is nu een render. -->
-        </div>
+    <div class="woningen">
+      <article class="won">
+        <span class="won-nr">Nummer 33</span>
+        <h3>Syrah</h3>
+        <p class="won-t">Bestaand, geschakeld</p>
+        <ul class="won-s"><li>6 personen</li><li>Kavel 396 m2</li><li>Hottub mogelijk</li></ul>
+      </article>
+      <article class="won nieuw">
+        <span class="won-nr">Nummer 39</span>
+        <h3>Bungalow</h3>
+        <p class="won-t">Nieuwbouw, geschakeld</p>
+        <ul class="won-s"><li>6 personen</li><li>Kavel 376 m2</li><li>Hottub mogelijk</li></ul>
+      </article>
+      <article class="won nieuw">
+        <span class="won-nr">Nummer 40</span>
+        <h3>Bungalow</h3>
+        <p class="won-t">Nieuwbouw, geschakeld</p>
+        <ul class="won-s"><li>6 personen</li><li>Kavel 249 m2</li><li>Hottub mogelijk</li></ul>
+      </article>
+      <article class="won nieuw">
+        <span class="won-nr">Nummer 41</span>
+        <h3>Nieuwbouw</h3>
+        <p class="won-t">Indeling en prijs volgen</p>
+        <ul class="won-s"><li>Op eigen grond</li><li>Zwembad of hottub mogelijk</li></ul>
+      </article>
+    </div>
+        <div class="zeker">
+      <div class="zeker-k">
+        <h3>Een huis dat werkt als u er niet bent</h3>
+        <p>De weken dat u er zelf niet bent, verhuurt FranceComfort de woning. Zij regelen de gasten, de schoonmaak en het onderhoud, en u krijgt jaarlijks een afrekening. Geen tweede huis dat alleen maar geld kost, maar een dat zichzelf draagt.</p>
       </div>
-
-      <div class="offer-card">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5df7dbbaf5f6da4051ec27.png" alt="Vakantiewoning met terras op Domaine de Lanzac" loading="lazy">
-        <div class="offer-body">
-          <span class="badge">Rendement</span>
-          <h3>Wat de verhuur oplevert</h3>
-          <p>Afhankelijk van het woningtype en de ligging ligt het rendement tussen de 5 en 7% per jaar. Een ruime villa met eigen zwembad verhuurt nu eenmaal anders dan een compacte woning. Wij rekenen uw woning door met de werkelijke verhuurcijfers en geven de prognoses voor de komende jaren.</p>
-          <!-- BRONNEN rendement, alle geraadpleegd 7-10-2026 en onderling tegenstrijdig:
-               - typepagina's domainedelanzac.nl: Cinsault "Rendement: tot 6%", Carignan "tot 7%"
-               - domainedelanzac.nl: "een vast nettorendement van 5% en op jacuzzi's en zwembaden 10%"
-               - FranceComfort parkpagina: "Te koop met 5% huuropbrengst!"
-               - Select Makelaars: "een rendement tussen de 4 - 7%, plus ruim 2 % extra rendement uit voordeel box 3"
-               BEWIJS NODIG: Ruben moet een van deze bronnen als leidend aanwijzen en op papier laten zetten.
-               Let vooral op het woord "vast" op de eigen parksite: dat suggereert een garantie. Zolang dat
-               niet is uitgezocht, blijft deze sectie bewust zonder een enkel kopgetal. -->
-          <div class="proof">U krijgt de berekening op papier, met de bron van elk getal erbij, zodat uw eigen adviseur hem kan nalopen.</div>
-          <!-- BEWIJS NODIG: contractclausule (aanbieder, looptijd 5 jaar, berekeningsgrondslag, uitkeringsfrequentie, wat er na jaar 5 gebeurt). Wft: laten toetsen. -->
-        </div>
+      <div class="zeker-k">
+        <h3>De grond is van u</h3>
+        <p>Geen erfpacht en geen canon. De woning is traditioneel gebouwd, van steen, en bij bestaande woningen hoort het aanwezige interieur erbij. Het eigendom wordt bij de Franse notaris op uw naam ingeschreven, met Nederlandstalige begeleiding.</p>
       </div>
-
-      <div class="offer-card">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5df7d3baf5f6da4051eb6a.png" alt="Stenen chalet met tuin op Domaine de Lanzac" loading="lazy">
-        <div class="offer-body">
-          <span class="badge">Eigen grond</span>
-          <h3>Volle eigendom op eigen grond, stenen woning, inventaris inbegrepen</h3>
-          <p>Geen erfpacht, geen canon. De grond is van u, de woning is van u, de inventaris zit in de prijs.</p>
-          <!-- BRON: "eigen grond, volle eigendom, geen erfpacht", "inclusief inventaris", "huurcontract overdraagbaar" (french-dream.html, Advertenties/02). -->
-          <div class="proof">Eigendom wordt bij de Franse notaris op uw naam ingeschreven, met Nederlandstalige begeleiding.</div>
-        </div>
-      </div>
-
-      <div class="offer-card">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a918510058f231d6aea25d0.webp" alt="Luchtfoto van Domaine de Lanzac in het landschap" loading="lazy">
-          <!-- BEELD: FranceComfort heeft publieke foto's van DDL (zwembad met vallei-uitzicht, restaurantterras, animatie, speeltuin) op www.francecomfort.com/l/nl/library/download/. Die hier plaatsen zodra de rechten geregeld zijn. Van de bakkerij is geen eenduidige foto gevonden. -->
-        <div class="offer-body">
-          <span class="badge">Zoover 9,1</span>
-          <h3>Een park dat gasten op Zoover een 9,1 geven, met een Gouden Zoover award</h3>
-          <p>Drie zwembaden, restaurant Le Merigou, loungebar Studio 46, een eigen warme bakkerij, tennisbaan en Nederlandstalige animatie. Gasten geven vooral de ligging en de service hoge cijfers.</p>
-          <!-- BRON Zoover 9.1 uit 108 beoordelingen, Gouden Zoover: zoover.be/frankrijk/midi-pyrenees/lanzac/francecomfort-domaine-de-lanzac, 7-10-2026. Subscores: ligging 9.2, service 9.1, onderkomen 8.9, prijs/kwaliteit 8.7. BEWIJS NODIG: bezettingspercentages voor DDL; de eerder gebruikte cijfers (100/70/40) kwamen uit het Village des Cigales-materiaal en gelden niet zonder meer voor dit park. -->
-          <div class="proof">Zoover 9,1 uit 108 beoordelingen, Gouden Zoover award. Hoogste subscores voor ligging (9,2) en service (9,1).</div>
-        </div>
+      <div class="zeker-k">
+        <h3>Een park dat al draait</h3>
+        <p>Geen bouwput en geen aanloopjaren. Gasten geven Domaine de Lanzac op Zoover een 9,1 uit 108 beoordelingen, met een Gouden Zoover award, en de hoogste cijfers voor ligging en service.</p>
       </div>
     </div>
+
+<p class="risk" style="margin-top:18px">Prijzen en indelingen van deze vier woningen ontvangt u in de brochure en nemen wij op 7 november met u door. Nieuwbouw is vrij op naam en exclusief btw; de btw is bij verhuur terug te vorderen. Opties: een privezwembad van 6 bij 3 meter met travertin terras, een hottub inclusief fundering en aansluiting, en een aircopakket.</p>
+
   </div>
 </section>
 
 <!-- SECTIE: Breder aanbod | VARIABELE: droomuitkomst (keuze) + kans van slagen -->
 <!-- BRON: domainedelanzac.nl en Select Makelaars, geraadpleegd 7-10-2026. Alle prijzen kosten koper. -->
-<section class="section" id="aanbod-breed" style="background:var(--cream)">
-  <div class="container">
-    <p class="eyebrow">Meer dan deze twee</p>
-    <h2>Vier nieuwbouwtypes en twee bestaande villa&#39;s</h2>
-    <p class="lead">Van een Merlot van 85 vierkante meter tot een Cinsault van 140. Het aanbod wisselt en nieuwbouwkavels komen in series vrij. Op 7 november nemen wij de actuele lijst met u door.</p>
-    <div class="galerij">
-      <div class="foto"><img src="img/ddl-woning-terras.jpg" alt="Woning op Domaine de Lanzac met overdekt terras op palen en een privezwembad in de tuin" loading="lazy"></div>
-      <div class="foto"><img src="img/ddl-impressie-nieuwbouw.jpg" alt="Impressie van nieuwbouwwoningen op Domaine de Lanzac, elk met een eigen zwembad" loading="lazy"></div>
-      <div class="foto"><img src="img/ddl-privezwembad.jpg" alt="Privezwembad bij een woning op Domaine de Lanzac, gezien vanaf een ligbed tussen de eiken" loading="lazy"></div>
-      <div class="foto"><img src="img/ddl-woning-zwembad.jpg" alt="Privezwembad met travertin terras bij een woning op Domaine de Lanzac" loading="lazy"></div>
-    </div>
-    <p class="bijschrift">Woningen op Domaine de Lanzac. Foto&#39;s eigen shoot mei 2026; rechtsboven een impressie van de nieuwbouw.</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Woningtype</th><th>Vanaf (k.k.)</th><th>Woonoppervlak</th><th>Slaapkamers</th></tr></thead>
-        <tbody>
-          <!-- BRON: domainedelanzac.nl/DDL en de typepagina's, geraadpleegd 7-10-2026. Prijzen zijn kosten koper, niet excl. btw. -->
-          <tr><td>Merlot</td><td>&euro;181.500</td><td>85 m2</td><td>1</td></tr>
-          <tr><td>Carignan</td><td>&euro;185.000</td><td>85 m2</td><td>2</td></tr>
-          <tr><td>Syrah</td><td>&euro;213.000</td><td>115 m2</td><td>3</td></tr>
-          <tr style="background:rgba(224,169,59,.10)"><td><strong>Cinsault</strong></td><td><strong>&euro;218.500</strong></td><td>140 m2</td><td>4</td></tr>
-          <tr><td>Bestaande villa</td><td>&euro;229.000</td><td>84 m2</td><td>&ndash;</td></tr>
-          <tr><td>Bestaande villa</td><td>&euro;279.000</td><td>113 m2</td><td>&ndash;</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="risk" style="margin-top:16px">Alle prijzen zijn kosten koper en onder voorbehoud van beschikbaarheid. Elke woning kan voorzien worden van een jacuzzi of hottub. Een aantal woningen kan daarnaast een privezwembad krijgen, afhankelijk van de grootte van de kavel. Voor de woning waarin u interesse heeft geven wij een rendementsprognose op maat af.
-      <!-- BEWIJS NODIG: prijzen van de opties privezwembad en jacuzzi; die staan nergens publiek. De eerder in ons materiaal genoemde bedragen (50.000 en 9.500 euro) zijn niet te bevestigen en daarom verwijderd. --></p>
-  </div>
-</section>
 
 
 
@@ -528,37 +513,6 @@
 </section>
 
 
-<!-- SECTIE: Fiscale vergelijking (diepere bewijssectie) | VARIABELE: droomuitkomst + kans van slagen -->
-<section class="section fiscaal" id="fiscaal">
-  <div class="container">
-    <p class="eyebrow">Belastingvoordelen van Frankrijk</p>
-    <h2>Nederland belast een fictief rendement op uw vermogen. Frankrijk belast alleen wat u werkelijk verdient.</h2>
-    <p class="lead">Twee stelsels naast elkaar, met de cijfers van 2026.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th></th><th class="nl">Recreatiewoning in Nederland</th><th class="fr">Woning op Domaine de Lanzac</th></tr></thead>
-        <tbody>
-          <!-- BRON NL: belastingdienst.nl box 3 2026 (6% x 36%, vrijstelling €59.357). BRON FR: verdrag NL-FR art. 6/24, vrijstellingsmethode (belastingdienst.nl). -->
-          <tr><td>Belasting over het vermogen</td><td class="nl">Box 3: circa 2,16% van de waarde per jaar, huur of geen huur</td><td class="fr">Vrijgesteld via het belastingverdrag. Geen Franse vermogensbelasting onder &euro;1,3 miljoen</td></tr>
-          <!-- BRON: opgave Maison Pure 15-10-2026. -->
-          <tr><td>Belasting bij aankoop</td><td class="nl">8% overdrachtsbelasting plus notariskosten, 7% vanaf 2027. Of 21% btw bij nieuwbouw</td><td class="fr">1% notariskosten bij nieuwbouw. Bij een bestaande woning 7%, inclusief notariskosten</td></tr>
-          <!-- BRON: micro-BIC forfait 50% geclassificeerd / 30% niet-geclassificeerd (service-public.gouv.fr/F32744); minimumtarief niet-inwoners 20%; sociale heffing 7,5% voor in NL verzekerden (impots.gouv.fr). -->
-          <tr><td>Belasting over de huur</td><td class="nl">Geen aparte heffing, zit in het box 3-forfait</td><td class="fr">Over de werkelijke huur, na forfaitaire aftrek van 50% (geclassificeerd) of 30%. Daarna 20% inkomstenbelasting plus 7,5% sociale heffing</td></tr>
-          <!-- BRON: taxe foncière 2 jaar vrijstelling nieuwbouw, CGI art. 1383 (quechoisir.org). -->
-          <tr><td>Lokale lasten</td><td class="nl">OZB, forensen- en toeristenbelasting</td><td class="fr">Taxe fonciere, bij nieuwbouw de eerste 2 jaar vrijgesteld</td></tr>
-          <!-- BRON: plus-value niet-inwoner 19% + 7,5% (EU-verzekerd); vrij na 22 jaar (IR) en 30 jaar (sociaal) (service-public.gouv.fr/F10864). -->
-          <tr><td>Belasting bij verkoop</td><td class="nl">Nu onbelast; toekomstig stelsel onzeker</td><td class="fr">19% plus 7,5% over de winst, aflopend, vrij na 22 respectievelijk 30 jaar</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="fis-claim">
-      <p>In Nederland moet u <em>tot wel 2% extra rendement</em> halen om netto hetzelfde over te houden als in Frankrijk.</p>
-      <p class="onder">Box 3 kost u circa 2,16% van de waarde per jaar, of er nu huur binnenkomt of niet. Dat verlies maakt u eerst goed voordat u iets verdient. In Frankrijk betaalt u pas belasting over de huur die u werkelijk ontvangt.</p>
-      <!-- BRON: box 3 2026, forfait 6,00% x tarief 36% = 2,16% van de waarde per jaar boven de vrijstelling (belastingdienst.nl). De "tot wel" dekt af dat het bedrag onder de heffingsvrije voet lager uitvalt. -->
-    </div>
-    <p class="disclaimer">Algemene informatie op basis van de regelgeving per september 2026. Uw werkelijke belastingdruk hangt af van uw situatie, financiering, eigen gebruik en bezitsduur. Maison Pure is geen belastingadviseur; laat u vooraf adviseren door een fiscalist met kennis van beide stelsels.</p>
-  </div>
-</section>
 
 <!-- SECTIE: Het park (bewijs bij de claim over de beoordeling) | VARIABELE: kans van slagen -->
 <section class="section" id="park">
@@ -625,9 +579,9 @@
     <h2>De vragen die in elk gesprek langskomen</h2>
     <div style="margin-top:22px">
       <details><summary>Wat gebeurt er op 7 november in Breda?</summary><p>Drie sessies bij Postillion Breda, om 10:00, 13:00 en 15:00. Het adres ontvangt u bij uw bevestiging. Wij laten de woningen en plattegronden zien, wat er beschikbaar is, en hoe het fiscaal uitpakt. Gratis, en u beslist die dag niets.</p></details>
-      <details><summary>Hoeveel rendement levert een woning op?</summary><p>Tussen de 5 en 7% per jaar, afhankelijk van het woningtype, de ligging en het verhuurjaar. Vraagt u een berekening aan, dan rekenen wij met uw type, de opties en de beschikbare verhuurcijfers, en krijgt u de aannames erbij.</p></details>
-      <details><summary>Betaal ik in Nederland box 3?</summary><p>U geeft de woning aan, maar Nederland stelt haar vrij via het belastingverdrag. Per saldo betaalt u hier geen box 3. De waarde telt wel mee voor de vermogenstoets van toeslagen.</p></details>
-      <details><summary>Hoeveel belasting betaal ik in Frankrijk?</summary><p>Frankrijk belast de werkelijke huur na een forfaitaire aftrek van 50% (geclassificeerd) of 30%. Over het restant minimaal 20% inkomstenbelasting plus 7,5% sociale heffing als u in Nederland verzekerd bent. Bij &euro;12.000 huur met classificatie is dat circa &euro;1.650 per jaar.</p></details>
+      <details><summary>Wat levert de verhuur op?</summary><p>Dat verschilt per woning, per ligging en per jaar, en wij zetten er bewust geen percentage als kopregel neer. Wat wij wel doen: voor de woning waar u naar kijkt maken wij een berekening met de werkelijke verhuurcijfers en de aannames erbij, zodat u ziet waar elk getal vandaan komt. FranceComfort rekent jaarlijks met u af over de werkelijke opbrengst.</p></details>
+      <details><summary>Hoe zit het fiscaal, in Nederland en in Frankrijk?</summary><p>U geeft de woning op in uw Nederlandse aangifte, maar Nederland stelt haar vrij via het belastingverdrag; per saldo betaalt u hier geen box 3. De waarde telt wel mee voor de vermogenstoets van toeslagen. Frankrijk belast de werkelijke huur na een forfaitaire aftrek van 50% (geclassificeerd) of 30%, daarna 20% inkomstenbelasting plus 7,5% sociale heffing als u in Nederland verzekerd bent. Bij &euro;12.000 huur met classificatie komt dat neer op circa &euro;1.650 per jaar.</p></details>
+      
       <details><summary>Mag ik er zelf gebruik van maken?</summary><p>Ja, in overleg met FranceComfort, tegen alleen de verbruikskosten. Houd er rekening mee dat Frankrijk bij eigen gebruik taxe d&#39;habitation kan heffen en dat eigen weken niet meetellen in de opbrengst.</p></details>
       <details><summary>En als ik later wil verkopen?</summary><p>Het huurcontract gaat over op de koper, waardoor de woning direct rendabel blijft. Frankrijk belast de winst met 19% plus 7,5%, jaarlijks aflopend en vrijgesteld na 22 respectievelijk 30 jaar. Nederland heft niet.</p></details>
     </div>
@@ -660,6 +614,13 @@
         <span class="badge">7 november</span>
         <h3>Meld u aan voor 7 november</h3>
         <p class="sub">Zaterdag 7 november bij Postillion Breda. Kies 10:00, 13:00 of 15:00.</p>
+        <div class="after">
+          <strong>Wat er gebeurt nadat u zich aanmeldt</strong>
+          <ol>
+            <li>U ontvangt een bevestiging met het adres en uw sessie.</li>
+            <li>Vooraf bellen wij kort, zodat we weten waar u vragen over heeft.</li>
+          </ol>
+        </div>
         <div class="placeholder">
           [GHL FORM EMBED: "Aanmelding 7 november, Postillion Breda"]
           <!--
@@ -668,18 +629,18 @@
             Tag: ddl-lanzac-7nov. Pipeline: Frankrijk > Informatiedag 7 nov.
           -->
         </div>
-        <div class="after">
-          <strong>Wat er gebeurt nadat u zich aanmeldt</strong>
-          <ol>
-            <li>U ontvangt een bevestiging met het adres en uw sessie.</li>
-            <li>Vooraf bellen wij kort, zodat we weten waar u vragen over heeft.</li>
-          </ol>
-        </div>
       </div>
       <!-- FORMULIER: telefonisch gesprek (GHL Calendar) -->
       <div class="form-card" id="brochure">
         <h3>Vraag de brochure aan</h3>
         <p class="sub">Cijfers, plattegronden en de actuele prijslijst. Direct in uw mailbox.</p>
+        <div class="after">
+          <strong>Wat er gebeurt nadat u de aanvraag verstuurt</strong>
+          <ol>
+            <li>De brochure staat binnen enkele minuten in uw mailbox.</li>
+            <li>Daarna nemen wij persoonlijk contact met u op.</li>
+          </ol>
+        </div>
         <div class="placeholder">
           [GHL FORM EMBED: "Brochure Domaine de Lanzac"]
           <!--
@@ -689,13 +650,6 @@
             
             Bron-veld: utm_content.
           -->
-        </div>
-        <div class="after">
-          <strong>Wat er gebeurt nadat u verzendt</strong>
-          <ol>
-            <li>De brochure staat binnen enkele minuten in uw mailbox.</li>
-            <li>Daarna nemen wij persoonlijk contact met u op.</li>
-          </ol>
         </div>
       </div>
     </div>
@@ -717,7 +671,7 @@
         <p><a href="#droom">Wat u ervoor terugkrijgt</a></p>
         <p><a href="#vergelijking">Nederland vs. Frankrijk</a></p>
         <p><a href="#aanbod">Het aanbod</a></p>
-        <p><a href="#fiscaal">Belastingvoordelen</a></p>
+        
         <p><a href="#faq">Veelgestelde vragen</a></p>
       </div>
       <div>
