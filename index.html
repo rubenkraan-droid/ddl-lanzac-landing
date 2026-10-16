@@ -253,7 +253,6 @@
   .parkband{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 4px}
   @media(min-width:760px){.parkband{grid-template-columns:repeat(3,1fr)}}
   .parkband .foto{aspect-ratio:16/10}
-  .bijschrift{margin-top:10px;font-size:.84rem;color:var(--muted)}
 
   .galerij{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 6px}
   @media(min-width:760px){.galerij{grid-template-columns:1fr 1fr}}
@@ -289,8 +288,6 @@
   .galerij figure{position:relative;margin:0;aspect-ratio:3/2;border-radius:14px;overflow:hidden;
                   border:1px solid var(--line);background:var(--greybg)}
   .galerij img{display:block;width:100%;height:100%;object-fit:cover}
-  .galerij figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;color:#fff;
-       font-size:.85rem;line-height:1.35;background:linear-gradient(transparent,rgba(20,24,20,.78))}
 </style>
 </head>
 <body>
@@ -379,7 +376,6 @@
     <div class="foto droom-foto">
       <img src="img/ddl-impressie-gezin.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy">
     </div>
-    <p class="bijschrift">Impressie van een woning met privezwembad op Domaine de Lanzac.</p>
 
     <p class="droom-slot">En de weken dat u er zelf niet bent? Dan staat het huis niet leeg. <strong>FranceComfort verhuurt het, en de woning draagt zichzelf.</strong> Dat is het verschil met een tweede huis dat alleen maar geld kost.</p>
   </div>
@@ -492,20 +488,19 @@
 <p class="risk" style="margin-top:18px">Nieuwbouwprijzen zijn vrij op naam en exclusief btw; de btw is bij verhuur terug te vorderen. Inventaris en het aircopakket komen daar nog bij. De bestaande woning op nummer 33 is kosten koper en exclusief opknapwerkzaamheden. De plattegronden en de indeling per woning ontvangt u in de brochure en nemen wij op 7 november met u door. Opties: een privezwembad van 6 bij 3 meter met travertin terras, een hottub inclusief fundering en aansluiting, en een aircopakket.</p>
 
     <div class="galerij">
-      <figure><img src="img/ddl-40-render-avond.jpg" alt="Render van nummer 40 bij avond: overdekt terras met verlichting, olijfboom en lavendel" loading="lazy"><figcaption>Nummer 40, render van het terras bij avond</figcaption></figure>
-      <figure><img src="img/ddl-bungalow-terras.jpg" alt="Render van het Bungalow-type: gedekte tafel onder het overdekte terras, met olijfbomen en lavendel" loading="lazy"><figcaption>Bungalow, het type van 39 en 40</figcaption></figure>
-      <figure><img src="img/ddl-bungalow-voorzijde.jpg" alt="Render van het Bungalow-type van de voorzijde, met luiken, olijfboom en zitje in de tuin" loading="lazy"><figcaption>Bungalow, voorzijde met eigen tuin</figcaption></figure>
-      <figure><img src="img/ddl-41-woonkamer.jpg" alt="Woonkamer van nummer 41 met travertin vloer en schuifpui naar het terras met vallei-uitzicht" loading="lazy"><figcaption>Nummer 41, woonkamer met dalzicht</figcaption></figure>
-      <figure><img src="img/ddl-41-woonkamer-terras.jpg" alt="Woonkamer van nummer 41 met zicht op het overdekte terras en de eettafel buiten" loading="lazy"><figcaption>Nummer 41, zicht op het overdekte terras</figcaption></figure>
-      <figure><img src="img/ddl-woning-terras.jpg" alt="Woning op Domaine de Lanzac met overdekt terras op palen en een privezwembad in de tuin" loading="lazy"><figcaption>Overdekt terras, met het zwembad eronder</figcaption></figure>
-      <figure><img src="img/ddl-woning-wei.jpg" alt="Vrijstaande woning op Domaine de Lanzac met privezwembad aan de rand van het park" loading="lazy"><figcaption>Aan de rand van het park, met eigen zwembad</figcaption></figure>
-      <figure><img src="img/ddl-privezwembad.jpg" alt="Privezwembad bij een woning op Domaine de Lanzac, gezien vanaf een ligbed tussen de eiken" loading="lazy"><figcaption>Vanaf het ligbed, tussen de eiken</figcaption></figure>
-      <figure><img src="img/ddl-woning-zwembad.jpg" alt="Privezwembad met travertin terras bij een woning op Domaine de Lanzac" loading="lazy"><figcaption>Privezwembad met travertin terras</figcaption></figure>
-      <figure><img src="img/ddl-impressie-nieuwbouw.jpg" alt="Impressie van nieuwbouwwoningen op Domaine de Lanzac, elk met een eigen zwembad" loading="lazy"><figcaption>Impressie van de nieuwbouw</figcaption></figure>
-      <figure><img src="img/ddl-impressie-gezin.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy"><figcaption>Impressie van het gebruik</figcaption></figure>
-      <figure><img src="img/ddl-park-luchtfoto.jpg" alt="Luchtfoto van Domaine de Lanzac op de heuveltop, met de privezwembaden en de vallei" loading="lazy"><figcaption>Het park vanuit de lucht</figcaption></figure>
+      <figure><img src="img/ddl-40-render-avond.jpg" alt="Render van nummer 40 bij avond: overdekt terras met verlichting, olijfboom en lavendel" loading="lazy"></figure>
+      <figure><img src="img/ddl-bungalow-terras.jpg" alt="Render van het Bungalow-type: gedekte tafel onder het overdekte terras, met olijfbomen en lavendel" loading="lazy"></figure>
+      <figure><img src="img/ddl-bungalow-voorzijde.jpg" alt="Render van het Bungalow-type van de voorzijde, met luiken, olijfboom en zitje in de tuin" loading="lazy"></figure>
+      <figure><img src="img/ddl-41-woonkamer.jpg" alt="Woonkamer van nummer 41 met travertin vloer en schuifpui naar het terras met vallei-uitzicht" loading="lazy"></figure>
+      <figure><img src="img/ddl-41-woonkamer-terras.jpg" alt="Woonkamer van nummer 41 met zicht op het overdekte terras en de eettafel buiten" loading="lazy"></figure>
+      <figure><img src="img/ddl-woning-terras.jpg" alt="Woning op Domaine de Lanzac met overdekt terras op palen en een privezwembad in de tuin" loading="lazy"></figure>
+      <figure><img src="img/ddl-woning-wei.jpg" alt="Vrijstaande woning op Domaine de Lanzac met privezwembad aan de rand van het park" loading="lazy"></figure>
+      <figure><img src="img/ddl-privezwembad.jpg" alt="Privezwembad bij een woning op Domaine de Lanzac, gezien vanaf een ligbed tussen de eiken" loading="lazy"></figure>
+      <figure><img src="img/ddl-woning-zwembad.jpg" alt="Privezwembad met travertin terras bij een woning op Domaine de Lanzac" loading="lazy"></figure>
+      <figure><img src="img/ddl-impressie-nieuwbouw.jpg" alt="Impressie van nieuwbouwwoningen op Domaine de Lanzac, elk met een eigen zwembad" loading="lazy"></figure>
+      <figure><img src="img/ddl-impressie-gezin.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy"></figure>
+      <figure><img src="img/ddl-park-luchtfoto.jpg" alt="Luchtfoto van Domaine de Lanzac op de heuveltop, met de privezwembaden en de vallei" loading="lazy"></figure>
     </div>
-    <p class="bijschrift">Beelden van Domaine de Lanzac. De drie renders en de twee impressies zijn geen foto&#39;s.</p>
 
   </div>
 </section>
@@ -557,7 +552,6 @@
       <div class="foto"><img src="img/ddl-dalzicht.jpg" alt="Dronefoto van Domaine de Lanzac op de heuvelrand, met wolkenslierten over de Dordogne-vallei" loading="lazy"></div>
       <div class="foto"><img src="img/ddl-rocamadour.jpg" alt="Winkelstraat in Rocamadour met bezoekers tussen de middeleeuwse huizen" loading="lazy"></div>
     </div>
-    <p class="bijschrift">Het park, het dalzicht en Rocamadour op 27 kilometer.</p>
 
     <div class="kaart">
       <img src="img/kaart-ligging.svg" alt="Kaart van de omgeving met Domaine de Lanzac, Souillac, Rocamadour, Sarlat, Brive, Gourdon, Martel en Cahors" loading="lazy">
