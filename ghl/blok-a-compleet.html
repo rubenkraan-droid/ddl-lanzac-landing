@@ -16,9 +16,9 @@
   p{margin-bottom:12px}
   a{color:inherit}
   img{max-width:100%;display:block}
-  .container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+  .container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px;container-type:inline-size}
   .section{padding:56px 0}
-  @media(min-width:768px){.section{padding:80px 0}}
+  @container (min-width:700px){.section{padding:80px 0}}
   .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
   .eyebrow.blue{color:var(--blue)}
   .lead{font-size:1.05rem;color:var(--muted);max-width:720px}
@@ -34,7 +34,7 @@
   .btn-secondary.dark{color:var(--green);border-color:var(--green)}
   .btn-green{background:var(--green);color:var(--white);border-color:var(--green)}
   .btn-wide{width:100%}
-  @media(min-width:600px){.btn-wide{width:auto;min-width:280px}}
+  @container (min-width:560px){.btn-wide{width:auto;min-width:280px}}
   .risk{font-size:.86rem;color:var(--muted);margin-top:8px}
   .risk.light{color:rgba(255,255,255,.85)}
 
@@ -45,7 +45,7 @@
   nav .nav-cta{display:flex;gap:8px;align-items:center}
   nav .btn{padding:10px 14px;font-size:.88rem}
   nav .nav-phone{color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;display:none}
-  @media(min-width:768px){nav img{height:56px}nav .nav-phone{display:inline}}
+  @container (min-width:700px){nav img{height:56px}nav .nav-phone{display:inline}}
 
   /* Hero */
   .hero{position:relative;color:#fff;min-height:calc(100vh - 64px);display:flex;align-items:center;overflow:hidden}
@@ -54,25 +54,22 @@
   .hero-inner{position:relative;z-index:2;padding:48px 0 40px}
   .hero h1{color:#fff;max-width:820px}
   .hero .sub{font-size:1.05rem;max-width:700px;margin:18px 0 22px;color:rgba(255,255,255,.95)}
-  @media(min-width:768px){.hero .sub{font-size:1.15rem}}
+  @container (min-width:700px){.hero .sub{font-size:1.15rem}}
   .hero .cta-row{display:flex;flex-direction:column;gap:10px;max-width:460px}
   .hero .cta-row .btn{width:100%}
-  .proof-strip{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px;max-width:820px}
-  @media(min-width:768px){.proof-strip{grid-template-columns:repeat(4,1fr)}}
+  .proof-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:28px;max-width:820px}
   .proof-item{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:12px 14px;backdrop-filter:blur(4px)}
   .proof-item strong{display:block;font-family:"Instrument Sans",Inter,sans-serif;font-weight:600;letter-spacing:-.02em;font-size:1.35rem;color:var(--gold);line-height:1.1}
   .proof-item span{font-size:.8rem;color:rgba(255,255,255,.9)}
 
   /* Bewijsbalk */
   .bewijsbalk{background:var(--green);color:#fff;padding:28px 0}
-  .bewijsbalk .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  @media(min-width:768px){.bewijsbalk .grid{grid-template-columns:repeat(4,1fr)}}
+  .bewijsbalk .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px}
   .bewijsbalk strong{display:block;font-family:"Instrument Sans",Inter,sans-serif;font-weight:600;letter-spacing:-.02em;font-size:1.7rem;color:var(--gold);line-height:1.1}
   .bewijsbalk span{font-size:.86rem;color:rgba(255,255,255,.9)}
 
   /* NL vs FR */
-  .vs{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px}
-  @media(min-width:768px){.vs{grid-template-columns:1fr 1fr;gap:24px}}
+  .vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:28px}
   .vs-card{border-radius:14px;padding:26px 24px}
   .vs-nl{background:var(--greybg);color:var(--muted);border:1px solid #D9DDE1}
   .vs-nl h3{color:#4A5057}
@@ -89,16 +86,14 @@
   .vs-fr li strong{color:var(--green)}
 
   /* Aanbod-blokken */
-  .offer{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
-  @media(min-width:768px){.offer{grid-template-columns:1fr 1fr}}
+  .offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:28px}
   .offer-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
   .offer-card img{width:100%;height:220px;object-fit:cover}
-  @media(min-width:768px){.offer-card img{height:260px}}
+  @container (min-width:700px){.offer-card img{height:260px}}
   .offer-body{padding:22px}
   .offer-body .proof{margin-top:12px;padding:12px 14px;background:var(--cream);border-left:3px solid var(--gold);font-size:.9rem;color:var(--muted)}
   .offer-body .proof strong{color:var(--text)}
-  .kavels{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
-  @media(min-width:520px){.kavels{grid-template-columns:1fr 1fr}}
+  .kavels{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
   .kavel{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--cream)}
   .kavel .nr{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
   .kavel .price{font-family:"Instrument Sans",Inter,sans-serif;font-weight:600;letter-spacing:-.02em;font-size:1.5rem;color:var(--green);margin:4px 0 2px}
@@ -107,8 +102,7 @@
   .badge.blue{background:var(--blue);color:#fff}
 
   /* Stappen */
-  .steps{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px;counter-reset:step}
-  @media(min-width:768px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:28px;counter-reset:step}
   .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 20px;position:relative}
   .step::before{counter-increment:step;content:counter(step);display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;margin-bottom:12px}
   .step .time{display:inline-block;font-size:.76rem;font-weight:600;color:var(--blue);background:#E7EEF5;padding:3px 9px;border-radius:999px;margin-bottom:8px}
@@ -130,11 +124,9 @@
   .disclaimer{font-size:.8rem;color:rgba(255,255,255,.75);margin-top:16px;line-height:1.5}
 
   /* Park/faciliteiten */
-  .park-media{display:grid;grid-template-columns:1fr;gap:14px;margin:26px 0}
-  @media(min-width:768px){.park-media{grid-template-columns:1.6fr 1fr}}
+  .park-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:26px 0}
   .park-media img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:16/10}
-  .fac{display:grid;grid-template-columns:1fr;gap:10px;list-style:none}
-  @media(min-width:600px){.fac{grid-template-columns:1fr 1fr}}
+  .fac{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;list-style:none}
   .fac li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.95rem;display:flex;gap:10px}
   .fac li::before{content:"";color:var(--green);font-weight:700}
 
@@ -156,8 +148,7 @@
   .cta-ov{position:absolute;inset:0;background:rgba(20,30,12,.78)}
   .cta-final .container{position:relative;z-index:2}
   .cta-final h2{color:#fff}
-  .forms{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
-  @media(min-width:900px){.forms{grid-template-columns:1fr 1fr}}
+  .forms{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:28px}
   .form-card{background:#fff;color:var(--text);border-radius:14px;padding:24px}
   .form-card h3{color:var(--green)}
   .form-card .sub{color:var(--muted);font-size:.94rem;margin-bottom:14px}
@@ -169,8 +160,7 @@
   .after li{margin-bottom:4px}
 
   footer{background:#1A1208;color:rgba(255,255,255,.8);padding:40px 0 28px;font-size:.9rem}
-  footer .grid{display:grid;grid-template-columns:1fr;gap:22px}
-  @media(min-width:768px){footer .grid{grid-template-columns:1.2fr 1fr 1fr}}
+  footer .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
   footer img{height:64px;width:auto;margin-bottom:10px}
   footer h4{color:#fff;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
   footer a{color:rgba(255,255,255,.8);text-decoration:none}
@@ -184,8 +174,7 @@
   .vw-link{font-weight:800;text-decoration:underline;white-space:nowrap}
 
   /* Praktische gegevens 7 november */
-  .vw-info{display:grid;grid-template-columns:1fr;gap:12px;margin-top:24px}
-  @media(min-width:700px){.vw-info{grid-template-columns:repeat(3,1fr)}}
+  .vw-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:24px}
   .vw-info>div{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:16px 18px;font-size:.95rem;line-height:1.5}
   .vw-info-k{display:block;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 
@@ -196,7 +185,7 @@
   /* Virtuele rondleiding: houdt de beeldverhouding op elk scherm */
   .tour-wrap{position:relative;width:100%;max-width:1017px;margin:24px auto 6px;aspect-ratio:1017/600;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#111}
   .tour-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-  @media(max-width:700px){.tour-wrap{aspect-ratio:4/3}}
+  @container (max-width:640px){.tour-wrap{aspect-ratio:4/3}}
 
   /* Grote uitspraak over het fiscale verschil */
   .fis-claim{max-width:900px;margin:34px auto 0;text-align:center;background:var(--green);
@@ -209,8 +198,7 @@
                     max-width:640px;margin-left:auto;margin-right:auto}
 
   /* Wat het u oplevert: de droomuitkomst, niet de rekensom */
-  .droom{display:grid;grid-template-columns:1fr;gap:18px;margin-top:30px}
-  @media(min-width:820px){.droom{grid-template-columns:repeat(3,1fr)}}
+  .droom{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:30px}
   .droom-kaart{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px 22px}
   .droom-kaart h3{font-size:1.12rem;margin-bottom:8px}
   .droom-kaart p{color:var(--muted);font-size:.97rem;line-height:1.62}
@@ -222,13 +210,11 @@
   .foto{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--greybg)}
   .foto img{display:block;width:100%;height:100%;object-fit:cover}
   .droom-foto{margin-top:28px;aspect-ratio:16/7}
-  @media(max-width:700px){.droom-foto{aspect-ratio:4/3}}
-  .parkband{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 4px}
-  @media(min-width:760px){.parkband{grid-template-columns:repeat(3,1fr)}}
+  @container (max-width:640px){.droom-foto{aspect-ratio:4/3}}
+  .parkband{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:26px 0 4px}
   .parkband .foto{aspect-ratio:16/10}
 
-  .galerij{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 6px}
-  @media(min-width:760px){.galerij{grid-template-columns:1fr 1fr}}
+  .galerij{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:26px 0 6px}
   .galerij .foto{aspect-ratio:3/2}
 
   .kaart{margin:26px 0 4px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#F3F1EC}
@@ -237,9 +223,7 @@
   .kaart-onder b{color:var(--text);font-weight:600}
 
   /* Vier uitgelichte woningen */
-  .woningen{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px}
-  @media(min-width:620px){.woningen{grid-template-columns:1fr 1fr}}
-  @media(min-width:980px){.woningen{grid-template-columns:repeat(4,1fr)}}
+  .woningen{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:28px}
   .won{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:22px 20px}
   .won.nieuw{border-color:#E6D5AE;background:#FDFBF6}
   .won-nr{display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
@@ -248,28 +232,22 @@
   .won-s{list-style:none;font-size:.93rem;color:var(--text)}
   .won-s li{padding:5px 0;border-top:1px solid var(--line)}
 
-  .zeker{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}
-  @media(min-width:860px){.zeker{grid-template-columns:repeat(3,1fr)}}
+  .zeker{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:34px}
   .zeker-k{border-left:3px solid var(--gold);padding:4px 0 4px 18px}
   .zeker-k h3{font-size:1.1rem;margin-bottom:7px}
   .zeker-k p{color:var(--muted);font-size:.96rem;line-height:1.62}
 
   /* Woninggalerij */
-  .galerij{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
-  @media(min-width:620px){.galerij{grid-template-columns:1fr 1fr}}
-  @media(min-width:1040px){.galerij{grid-template-columns:repeat(3,1fr)}}
+  .galerij{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:30px}
   .galerij figure{position:relative;margin:0;aspect-ratio:3/2;border-radius:14px;overflow:hidden;
                   border:1px solid var(--line);background:var(--greybg)}
   .galerij img{display:block;width:100%;height:100%;object-fit:cover}
 
   /* Algemene voorzieningen */
-  .voorz{display:grid;grid-template-columns:1fr;gap:14px;margin-top:28px}
-  @media(min-width:640px){.voorz{grid-template-columns:1fr 1fr}}
-  @media(min-width:1000px){.voorz{grid-template-columns:2fr 1fr 1fr}
-    .voorz .groot{grid-row:span 2}}
+  .voorz{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:28px}
   .voorz figure{position:relative;margin:0;border-radius:14px;overflow:hidden;
                 border:1px solid var(--line);background:var(--greybg);aspect-ratio:16/10}
-  .voorz .groot{aspect-ratio:auto;min-height:420px}
+  .voorz .groot{aspect-ratio:16/10;min-height:0}
   .voorz img{display:block;width:100%;height:100%;object-fit:cover}
   .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
        font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
@@ -287,19 +265,17 @@
   }
 
   /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen */
-  @media(max-width:899px){
+  @container (max-width:700px){
     .galerij,.voorz,.parkband,.droom,.zeker,.woningen{
       display:flex!important;gap:12px;overflow-x:auto;overflow-y:hidden;
       scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-      padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:none}
+      padding-bottom:10px;scrollbar-width:none}
     .galerij::-webkit-scrollbar,.voorz::-webkit-scrollbar,.parkband::-webkit-scrollbar,
     .droom::-webkit-scrollbar,.zeker::-webkit-scrollbar,.woningen::-webkit-scrollbar{display:none}
-    .droom-kaart,.zeker-k,.won{flex:0 0 78%;scroll-snap-align:start}
-    .zeker-k{padding-left:14px}
-    .galerij figure,.voorz figure,.parkband .foto{
-      flex:0 0 80%;scroll-snap-align:start;aspect-ratio:3/2}
-    .voorz .groot{min-height:0;aspect-ratio:3/2}
-    .schuifhint{display:block;font-size:.82rem;color:var(--muted);margin-top:6px}
+    .galerij figure,.voorz figure,.parkband .foto,.droom-kaart,.zeker-k,.won{
+      flex:0 0 80%;scroll-snap-align:start}
+    .galerij figure,.voorz figure,.parkband .foto{aspect-ratio:3/2}
+    .schuifhint{display:block}
   }
   .schuifhint{display:none}
 
@@ -308,12 +284,8 @@
   .ico.ok::before{content:"\2713"}
   .ico.no::before{content:"\2715"}
   .vw-lijst li::before,.fac li::before{content:"\2713"}
-  /* Geen 100vw-truc: blokken vullen simpelweg hun container.
-     Volle breedte zet je in de GHL-builder op de sectie zelf. */
-  nav,.vw-banner,section,footer{width:100%;max-width:100%;
-    margin-left:0;margin-right:0;left:auto;right:auto;box-sizing:border-box}
-  .container{max-width:1200px;width:100%;box-sizing:border-box}
-  img,svg,video,table,iframe{max-width:100%}
+  nav,.vw-banner,section,footer{width:100%;max-width:100%;margin-left:0;margin-right:0}
+  img,svg,video,iframe,table{max-width:100%}
   *,*::before,*::after{box-sizing:border-box}
 </style>
 
