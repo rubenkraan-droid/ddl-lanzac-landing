@@ -1,5 +1,4 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+<style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
   :root{
     --cream:#FAF9F7; --green:#4E5C4C; --gold:#E0A93B; --text:#2B2B2B;
@@ -280,10 +279,18 @@
   .ico.no::before{content:"\2715"}
   .vw-lijst li::before,.fac li::before{content:"\2713"}
 
-  /* GHL: uit de kolom breken naar de volle vensterbreedte */
-  html,body{overflow-x:hidden!important}
-  nav,.vw-banner,section,footer{width:100vw!important;max-width:100vw!important;
-    position:relative;left:50%;right:50%;margin-left:-50vw!important;margin-right:-50vw!important}
+  /* GHL: op brede schermen uit de kolom breken, op smalle schermen juist niet */
+  html,body{overflow-x:hidden!important;max-width:100%!important}
+  @media(min-width:900px){
+    nav,.vw-banner,section,footer{width:100vw!important;max-width:100vw!important;
+      position:relative;left:50%;right:50%;margin-left:-50vw!important;margin-right:-50vw!important}
+  }
+  @media(max-width:899px){
+    nav,.vw-banner,section,footer{width:100%!important;max-width:100%!important;
+      position:relative;left:auto;right:auto;margin-left:0!important;margin-right:0!important}
+    .container{max-width:100%!important}
+  }
+  img,svg,video,table{max-width:100%}
 </style>
 <section class="section cta-final"><div class="container"><div class="forms">
       <div class="form-card">
