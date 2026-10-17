@@ -273,6 +273,35 @@
   .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
        font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
 
+  /* Vaste actiebalk op mobiel, zodat de formulieren altijd bereikbaar zijn */
+  .mob-cta{display:none}
+  @media(max-width:899px){
+    .mob-cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;
+      z-index:9999;padding:10px 12px;background:rgba(78,92,76,.97);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+    .mob-cta a{display:block;text-align:center;padding:13px 8px;border-radius:10px;font-weight:700;
+      font-size:.92rem;line-height:1.2;text-decoration:none}
+    .mob-cta .brochure{color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+    .mob-cta .aanmelden{background:var(--gold);color:#2B2B2B}
+    body{padding-bottom:84px}
+  }
+
+  /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen */
+  @media(max-width:899px){
+    .galerij,.voorz,.parkband,.droom,.zeker,.woningen{
+      display:flex!important;gap:12px;overflow-x:auto;overflow-y:hidden;
+      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:none}
+    .galerij::-webkit-scrollbar,.voorz::-webkit-scrollbar,.parkband::-webkit-scrollbar,
+    .droom::-webkit-scrollbar,.zeker::-webkit-scrollbar,.woningen::-webkit-scrollbar{display:none}
+    .droom-kaart,.zeker-k,.won{flex:0 0 78%;scroll-snap-align:start}
+    .zeker-k{padding-left:14px}
+    .galerij figure,.voorz figure,.parkband .foto{
+      flex:0 0 80%;scroll-snap-align:start;aspect-ratio:3/2}
+    .voorz .groot{min-height:0;aspect-ratio:3/2}
+    .schuifhint{display:block;font-size:.82rem;color:var(--muted);margin-top:6px}
+  }
+  .schuifhint{display:none}
+
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}
   .ico.ok::before{content:"\2713"}
@@ -304,7 +333,12 @@
 </nav>
 
   <!-- SECTIE: Verkoopweekend-banner | VARIABELE: tijdsverloop (concrete datum, dichtbij) -->
-  <div class="vw-banner">
+  <div class="mob-cta">
+  <a class="brochure" href="#aanvragen">Brochure aanvragen</a>
+  <a class="aanmelden" href="#aanvragen">Aanmelden 7 nov</a>
+</div>
+
+<div class="vw-banner">
     <div class="container vw-inner">
       <span class="vw-badge">7 november</span>
       <span class="vw-txt"><strong>Zaterdag 7 november, Postillion Breda.</strong> Zie de woningen, de kansen en de fiscale kant.</span>
@@ -374,6 +408,7 @@
         <p>Rocamadour op een half uur, Sarlat met zijn markt net zo ver, kanoen op de Dordogne en de wijngaarden van Cahors verderop. Kinderen die het park uit hun hoofd kennen, en later hun kinderen weer.</p>
       </div>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer</p>
 
     <div class="foto droom-foto">
       <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3cf9a985d42cb58566.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy">
@@ -472,6 +507,7 @@
         <ul class="won-s"><li>Op eigen grond</li><li>Zwembad of hottub mogelijk</li><li>Excl. btw, inventaris en airco</li></ul>
       </article>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer</p>
         <div class="zeker">
       <div class="zeker-k">
         <h3>Een huis dat werkt als u er niet bent</h3>
@@ -486,6 +522,7 @@
         <p>Geen bouwput en geen aanloopjaren. Gasten geven Domaine de Lanzac op Zoover een 9,1 uit 108 beoordelingen, met een Gouden Zoover award, en de hoogste cijfers voor ligging en service.</p>
       </div>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer</p>
 
 <p class="risk" style="margin-top:18px">Nieuwbouwprijzen zijn vrij op naam en exclusief btw; de btw is bij verhuur terug te vorderen. Inventaris en het aircopakket komen daar nog bij. De bestaande woning op nummer 33 is kosten koper en exclusief opknapwerkzaamheden. De plattegronden en de indeling per woning ontvangt u in de brochure en nemen wij op 7 november met u door. Opties: een privezwembad van 6 bij 3 meter met travertin terras, een hottub inclusief fundering en aansluiting, en een aircopakket.</p>
 
@@ -505,6 +542,7 @@
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3cf9a985d42cb58566.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy"></figure>
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3dcd7225ed378ad17d.jpg" alt="Luchtfoto van Domaine de Lanzac op de heuveltop, met de privezwembaden en de vallei" loading="lazy"></figure>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer beelden</p>
 
   </div>
 </section>
@@ -556,6 +594,7 @@
       <div class="foto"><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d41f9a985d42cb585d7.jpg" alt="Dronefoto van Domaine de Lanzac op de heuvelrand, met wolkenslierten over de Dordogne-vallei" loading="lazy"></div>
       <div class="foto"><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d45cd7225ed378ad253.jpg" alt="Winkelstraat in Rocamadour met bezoekers tussen de middeleeuwse huizen" loading="lazy"></div>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer beelden</p>
 
     <div class="kaart">
       <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d7db3c1e3eb1920c428.svg" alt="Kaart van de omgeving met Domaine de Lanzac, Souillac, Rocamadour, Sarlat, Brive, Gourdon, Martel en Cahors" loading="lazy">
@@ -588,6 +627,7 @@
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364ddf9a985d42cd31b6a.jpg" alt="Restaurant Le Merigou met gedekte tafels en bloemenwand" loading="lazy"><figcaption>Restaurant Le Merigou</figcaption></figure>
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364de989628c77a3ae118.jpg" alt="Loungeruimte met fauteuils, banken en jazzmuurschildering" loading="lazy"><figcaption>De lounge</figcaption></figure>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer beelden</p>
   </div>
 </section>
 

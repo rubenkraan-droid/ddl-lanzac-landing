@@ -273,6 +273,35 @@
   .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
        font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
 
+  /* Vaste actiebalk op mobiel, zodat de formulieren altijd bereikbaar zijn */
+  .mob-cta{display:none}
+  @media(max-width:899px){
+    .mob-cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;
+      z-index:9999;padding:10px 12px;background:rgba(78,92,76,.97);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+    .mob-cta a{display:block;text-align:center;padding:13px 8px;border-radius:10px;font-weight:700;
+      font-size:.92rem;line-height:1.2;text-decoration:none}
+    .mob-cta .brochure{color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+    .mob-cta .aanmelden{background:var(--gold);color:#2B2B2B}
+    body{padding-bottom:84px}
+  }
+
+  /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen */
+  @media(max-width:899px){
+    .galerij,.voorz,.parkband,.droom,.zeker,.woningen{
+      display:flex!important;gap:12px;overflow-x:auto;overflow-y:hidden;
+      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:none}
+    .galerij::-webkit-scrollbar,.voorz::-webkit-scrollbar,.parkband::-webkit-scrollbar,
+    .droom::-webkit-scrollbar,.zeker::-webkit-scrollbar,.woningen::-webkit-scrollbar{display:none}
+    .droom-kaart,.zeker-k,.won{flex:0 0 78%;scroll-snap-align:start}
+    .zeker-k{padding-left:14px}
+    .galerij figure,.voorz figure,.parkband .foto{
+      flex:0 0 80%;scroll-snap-align:start;aspect-ratio:3/2}
+    .voorz .groot{min-height:0;aspect-ratio:3/2}
+    .schuifhint{display:block;font-size:.82rem;color:var(--muted);margin-top:6px}
+  }
+  .schuifhint{display:none}
+
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}
   .ico.ok::before{content:"\2713"}
