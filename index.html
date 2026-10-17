@@ -315,11 +315,14 @@
 
   /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen */
   @media(max-width:899px){
-    .galerij,.voorz,.parkband{
+    .galerij,.voorz,.parkband,.droom,.zeker,.woningen{
       display:flex!important;gap:12px;overflow-x:auto;overflow-y:hidden;
       scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
       padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:none}
-    .galerij::-webkit-scrollbar,.voorz::-webkit-scrollbar,.parkband::-webkit-scrollbar{display:none}
+    .galerij::-webkit-scrollbar,.voorz::-webkit-scrollbar,.parkband::-webkit-scrollbar,
+    .droom::-webkit-scrollbar,.zeker::-webkit-scrollbar,.woningen::-webkit-scrollbar{display:none}
+    .droom-kaart,.zeker-k,.won{flex:0 0 78%;scroll-snap-align:start}
+    .zeker-k{padding-left:14px}
     .galerij figure,.voorz figure,.parkband .foto{
       flex:0 0 80%;scroll-snap-align:start;aspect-ratio:3/2}
     .voorz .groot{min-height:0;aspect-ratio:3/2}
@@ -415,6 +418,7 @@
         <p>Rocamadour op een half uur, Sarlat met zijn markt net zo ver, kanoen op de Dordogne en de wijngaarden van Cahors verderop. Kinderen die het park uit hun hoofd kennen, en later hun kinderen weer.</p>
       </div>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer</p>
 
     <div class="foto droom-foto">
       <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3cf9a985d42cb58566.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy">
@@ -513,6 +517,7 @@
         <ul class="won-s"><li>Op eigen grond</li><li>Zwembad of hottub mogelijk</li><li>Excl. btw, inventaris en airco</li></ul>
       </article>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer</p>
         <div class="zeker">
       <div class="zeker-k">
         <h3>Een huis dat werkt als u er niet bent</h3>
@@ -527,6 +532,7 @@
         <p>Geen bouwput en geen aanloopjaren. Gasten geven Domaine de Lanzac op Zoover een 9,1 uit 108 beoordelingen, met een Gouden Zoover award, en de hoogste cijfers voor ligging en service.</p>
       </div>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer</p>
 
 <p class="risk" style="margin-top:18px">Nieuwbouwprijzen zijn vrij op naam en exclusief btw; de btw is bij verhuur terug te vorderen. Inventaris en het aircopakket komen daar nog bij. De bestaande woning op nummer 33 is kosten koper en exclusief opknapwerkzaamheden. De plattegronden en de indeling per woning ontvangt u in de brochure en nemen wij op 7 november met u door. Opties: een privezwembad van 6 bij 3 meter met travertin terras, een hottub inclusief fundering en aansluiting, en een aircopakket.</p>
 
