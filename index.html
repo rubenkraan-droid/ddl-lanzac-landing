@@ -310,6 +310,7 @@
      breken we uit naar de vensterbreedte. Op telefoons gebeurt dit niet,
      daar is de kolom al zo breed als het scherm. */
   @media(min-width:900px){
+    html,body{overflow-x:hidden}
     nav,.vw-banner,section,footer{width:100vw;max-width:100vw;
       margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
   }
