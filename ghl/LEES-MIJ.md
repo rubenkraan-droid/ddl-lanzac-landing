@@ -23,7 +23,7 @@ BLOK C   blok-c-footer.html   telefoonregel en footer
 | Formulier | Velden | Tag | Pipeline |
 |---|---|---|---|
 | Brochure | voornaam, e-mail, telefoon | ddl-lanzac-brochure | Frankrijk > Brochure aangevraagd |
-| Aanmelding | voornaam, achternaam, e-mail, telefoon, sessie (10:00 / 13:00 / 15:00), aantal personen | ddl-lanzac-7nov | Frankrijk > Informatiedag 7 nov |
+| Aanmelding | voornaam, achternaam, e-mail, telefoon, aantal personen (geen sessiekeuze) | ddl-lanzac-7nov | Frankrijk > Informatiedag 7 nov |
 
 ## Let op
 - Alle drie de blokken zijn volledig ASCII. GHL verhaspelt niet-ASCII tekens,
