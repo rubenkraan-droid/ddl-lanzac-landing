@@ -1,23 +1,28 @@
-# Domaine de Lanzac, opgesplitst voor de GHL-builder
+# Domaine de Lanzac in de GHL-builder
 
-De pagina is in drie custom-code blokken geknipt, met ruimte voor de twee
-natieve GHL-formulieren ertussen.
+Twee manieren. De tweede is schoner en wordt aangeraden.
+
+## Aanbevolen: stijl in de header, drie kleine blokken
+
+1. **Stijl eenmalig plaatsen.** Funnel of website -> Settings -> Custom CSS.
+   Plak de inhoud van `header-css.css`. Dat geldt dan voor alle stappen.
+   Werkt je versie met "Tracking Code" in plaats van Custom CSS? Gebruik dan
+   `header-css.html` in het Head-veld; daar zitten de `<style>`-tags al omheen.
+2. Daarna per sectie een Custom Code-element met:
 
 ```
-BLOK A   blok-a-boven.html    nav, hero, alles t/m de kop "Vraag de brochure aan"
-                              en het kadertje "wat er daarna gebeurt"
+BLOK A   blok-a-markup.html   30.109 tekens
 FORM 1   natief GHL-formulier "Brochure Domaine de Lanzac"
-BLOK B   blok-b-tussen.html   kop "Meld u aan voor 7 november" en het kadertje
+BLOK B   blok-b-markup.html      635 tekens
 FORM 2   natief GHL-formulier "Aanmelding 7 november, Postillion Breda"
-BLOK C   blok-c-footer.html   telefoonregel en footer
+BLOK C   blok-c-markup.html    2.990 tekens
 ```
 
-## Plaatsen
-1. Sectie -> element Custom Code -> plak blok A. Rij op volle breedte, padding 0.
-2. Nieuwe sectie -> Formulier -> brochureformulier.
-3. Nieuwe sectie -> Custom Code -> blok B.
-4. Nieuwe sectie -> Formulier -> aanmeldformulier.
-5. Nieuwe sectie -> Custom Code -> blok C.
+## Alternatief: alles in de blokken
+
+`blok-a-boven.html`, `blok-b-tussen.html` en `blok-c-footer.html` bevatten
+elk de volledige stijl. Handig als je niet bij de Custom CSS kunt, maar de
+stijl staat dan drie keer op de pagina.
 
 ## Formulieren
 | Formulier | Velden | Tag | Pipeline |
@@ -26,15 +31,14 @@ BLOK C   blok-c-footer.html   telefoonregel en footer
 | Aanmelding | voornaam, achternaam, e-mail, telefoon, aantal personen (geen sessiekeuze) | ddl-lanzac-7nov | Frankrijk > Informatiedag 7 nov |
 
 ## Let op
-- Alle drie de blokken zijn volledig ASCII. GHL verhaspelt niet-ASCII tekens,
-  dus de euro, de punt-scheiding en de vinkjes komen uit CSS (.eu, .dot, .ico).
-  Niets in deze bestanden met de hand vervangen door een echt euroteken.
-- Elk blok bevat de volledige stijl, zodat de volgorde in de builder niet uitmaakt.
-- Alle beelden komen uit GHL Media Storage, dus er is geen externe afhankelijkheid.
-- De knoppen verwijzen naar #aanvragen, dat in blok A zelf staat.
-
-## Volle breedte
-De blokken bevatten CSS die de secties uit de GHL-kolom laat breken naar
-100vw, met `overflow-x:hidden` op html en body om een horizontale balk te
-voorkomen. Je hoeft in de builder dus niets aan de breedte te doen. Zet de
-sectie- en rijpadding wel op 0, anders houd je een witte rand boven en onder.
+- Alles is volledig ASCII. GHL verhaspelt accenten, dus de euro, de
+  scheidingspunt en de vinkjes komen uit CSS (.eu, .dot, .ico). Vervang die
+  niet met de hand door echte tekens.
+- De CSS laat de secties uit de GHL-kolom breken naar 100vw, met
+  overflow-x:hidden om een horizontale balk te voorkomen. Je hoeft aan de
+  breedte-instelling niets te doen.
+- Zet de sectie- en rijpadding in de builder wel op 0, anders houd je een
+  witte rand boven en onder elk blok. Let op: GHL heeft aparte padding voor
+  mobiel.
+- De lettertypen worden door de CSS zelf geladen via een @import.
+- Alle beelden komen uit Media Storage, dus geen externe afhankelijkheid.
