@@ -32,3 +32,9 @@ BLOK C   blok-c-footer.html   telefoonregel en footer
 - Elk blok bevat de volledige stijl, zodat de volgorde in de builder niet uitmaakt.
 - Alle beelden komen uit GHL Media Storage, dus er is geen externe afhankelijkheid.
 - De knoppen verwijzen naar #aanvragen, dat in blok A zelf staat.
+
+## Volle breedte
+De blokken bevatten CSS die de secties uit de GHL-kolom laat breken naar
+100vw, met `overflow-x:hidden` op html en body om een horizontale balk te
+voorkomen. Je hoeft in de builder dus niets aan de breedte te doen. Zet de
+sectie- en rijpadding wel op 0, anders houd je een witte rand boven en onder.

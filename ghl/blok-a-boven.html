@@ -277,6 +277,11 @@
   .ico.ok::before{content:"\2713"}
   .ico.no::before{content:"\2715"}
   .vw-lijst li::before,.fac li::before{content:"\2713"}
+
+  /* GHL: uit de kolom breken naar de volle vensterbreedte */
+  html,body{overflow-x:hidden!important}
+  nav,.vw-banner,section,footer{width:100vw!important;max-width:100vw!important;
+    position:relative;left:50%;right:50%;margin-left:-50vw!important;margin-right:-50vw!important}
 </style>
 
 
