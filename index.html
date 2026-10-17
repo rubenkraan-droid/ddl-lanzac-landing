@@ -300,6 +300,32 @@
   .voorz img{display:block;width:100%;height:100%;object-fit:cover}
   .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
        font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
+
+  /* Vaste actiebalk op mobiel, zodat de formulieren altijd bereikbaar zijn */
+  .mob-cta{display:none}
+  @media(max-width:899px){
+    .mob-cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;
+      z-index:9999;padding:10px 12px;background:rgba(78,92,76,.97);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+    .mob-cta a{display:block;text-align:center;padding:13px 8px;border-radius:10px;font-weight:700;
+      font-size:.92rem;line-height:1.2;text-decoration:none}
+    .mob-cta .brochure{color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+    .mob-cta .aanmelden{background:var(--gold);color:#2B2B2B}
+    body{padding-bottom:84px}
+  }
+
+  /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen */
+  @media(max-width:899px){
+    .galerij,.voorz,.parkband{
+      display:flex!important;gap:12px;overflow-x:auto;overflow-y:hidden;
+      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:none}
+    .galerij::-webkit-scrollbar,.voorz::-webkit-scrollbar,.parkband::-webkit-scrollbar{display:none}
+    .galerij figure,.voorz figure,.parkband .foto{
+      flex:0 0 80%;scroll-snap-align:start;aspect-ratio:3/2}
+    .voorz .groot{min-height:0;aspect-ratio:3/2}
+    .schuifhint{display:block;font-size:.82rem;color:var(--muted);margin-top:6px}
+  }
+  .schuifhint{display:none}
 </style>
 </head>
 <body>
@@ -314,7 +340,12 @@
 </nav>
 
   <!-- SECTIE: Verkoopweekend-banner | VARIABELE: tijdsverloop (concrete datum, dichtbij) -->
-  <div class="vw-banner">
+  <div class="mob-cta">
+  <a class="brochure" href="#aanvragen">Brochure aanvragen</a>
+  <a class="aanmelden" href="#aanvragen">Aanmelden 7 nov</a>
+</div>
+
+<div class="vw-banner">
     <div class="container vw-inner">
       <span class="vw-badge">7 november</span>
       <span class="vw-txt"><strong>Zaterdag 7 november, Postillion Breda.</strong> Zie de woningen, de kansen en de fiscale kant.</span>
@@ -515,6 +546,7 @@
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3cf9a985d42cb58566.jpg" alt="Gezin in het privezwembad bij een woning op Domaine de Lanzac" loading="lazy"></figure>
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3dcd7225ed378ad17d.jpg" alt="Luchtfoto van Domaine de Lanzac op de heuveltop, met de privezwembaden en de vallei" loading="lazy"></figure>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer beelden</p>
 
   </div>
 </section>
@@ -566,6 +598,7 @@
       <div class="foto"><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d41f9a985d42cb585d7.jpg" alt="Dronefoto van Domaine de Lanzac op de heuvelrand, met wolkenslierten over de Dordogne-vallei" loading="lazy"></div>
       <div class="foto"><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d45cd7225ed378ad253.jpg" alt="Winkelstraat in Rocamadour met bezoekers tussen de middeleeuwse huizen" loading="lazy"></div>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer beelden</p>
 
     <div class="kaart">
       <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d7db3c1e3eb1920c428.svg" alt="Kaart van de omgeving met Domaine de Lanzac, Souillac, Rocamadour, Sarlat, Brive, Gourdon, Martel en Cahors" loading="lazy">
@@ -598,6 +631,7 @@
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364ddf9a985d42cd31b6a.jpg" alt="Restaurant Le Merigou met gedekte tafels en bloemenwand" loading="lazy"><figcaption>Restaurant Le Merigou</figcaption></figure>
       <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364de989628c77a3ae118.jpg" alt="Loungeruimte met fauteuils, banken en jazzmuurschildering" loading="lazy"><figcaption>De lounge</figcaption></figure>
     </div>
+    <p class="schuifhint">Veeg opzij voor meer beelden</p>
   </div>
 </section>
 
