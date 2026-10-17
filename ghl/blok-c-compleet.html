@@ -308,17 +308,13 @@
   .ico.ok::before{content:"\2713"}
   .ico.no::before{content:"\2715"}
   .vw-lijst li::before,.fac li::before{content:"\2713"}
-  html,body{overflow-x:hidden!important;max-width:100%!important}
-  @media(min-width:900px){
-    nav,.vw-banner,section,footer{width:100vw!important;max-width:100vw!important;
-      position:relative;left:50%;right:50%;margin-left:-50vw!important;margin-right:-50vw!important}
-  }
-  @media(max-width:899px){
-    nav,.vw-banner,section,footer{width:100%!important;max-width:100%!important;
-      position:relative;left:auto;right:auto;margin-left:0!important;margin-right:0!important}
-    .container{max-width:100%!important}
-  }
-  img,svg,video,table{max-width:100%}
+  /* Geen 100vw-truc: blokken vullen simpelweg hun container.
+     Volle breedte zet je in de GHL-builder op de sectie zelf. */
+  nav,.vw-banner,section,footer{width:100%;max-width:100%;
+    margin-left:0;margin-right:0;left:auto;right:auto;box-sizing:border-box}
+  .container{max-width:1200px;width:100%;box-sizing:border-box}
+  img,svg,video,table,iframe{max-width:100%}
+  *,*::before,*::after{box-sizing:border-box}
 </style>
 <section class="section cta-final"><div class="container"><div class="forms">
       <div class="form-card">
