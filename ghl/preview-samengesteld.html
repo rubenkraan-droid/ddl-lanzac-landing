@@ -260,6 +260,18 @@
                   border:1px solid var(--line);background:var(--greybg)}
   .galerij img{display:block;width:100%;height:100%;object-fit:cover}
 
+  /* Algemene voorzieningen */
+  .voorz{display:grid;grid-template-columns:1fr;gap:14px;margin-top:28px}
+  @media(min-width:640px){.voorz{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.voorz{grid-template-columns:2fr 1fr 1fr}
+    .voorz .groot{grid-row:span 2}}
+  .voorz figure{position:relative;margin:0;border-radius:14px;overflow:hidden;
+                border:1px solid var(--line);background:var(--greybg);aspect-ratio:16/10}
+  .voorz .groot{aspect-ratio:auto;min-height:260px}
+  .voorz img{display:block;width:100%;height:100%;object-fit:cover}
+  .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
+       font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
+
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}
   .ico.ok::before{content:"\2713"}
@@ -294,7 +306,7 @@
     <p class="eyebrow">Domaine de Lanzac <span class="dot"></span> Dordogne-vallei <span class="dot"></span> Maison Pure</p>
     <h1>Uw geld werkt harder in Frankrijk. Begin op een park dat al draait.</h1>
     <!-- BRON: feitencheck 7-10-2026 op de FranceComfort-parkpagina, domainedelanzac.nl, Zoover en OSM. -->
-    <p class="sub">Een park op een heuveltop boven de Dordogne-vallei, tussen Rocamadour en Sarlat. Uw woning staat op eigen grond, wordt verhuurd via FranceComfort en is via het belastingverdrag vrijgesteld van Nederlandse box 3. Op zaterdag 7 november laten wij alles zien bij Postillion Breda.</p>
+    <p class="sub">Een park op een heuveltop boven de Dordogne-vallei, tussen Rocamadour en Sarlat. Uw woning staat op eigen grond, wordt verhuurd via FranceComfort en is via het belastingverdrag vrijgesteld van Nederlandse box 3-belasting. Op zaterdag 7 november laten wij alles zien bij Postillion Breda.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#aanvragen">Meld u aan voor 7 november</a>
       <p class="risk light">Gratis. Zaterdag 7 november bij Postillion Breda. Sessies om 10:00, 13:00 en 15:00.</p>
@@ -554,6 +566,13 @@
       <li>Nederlandstalige beheerders, Annelies en Kurt, en receptie</li>
       <li>Laadpalen, glasvezelwifi en een zonneterras</li>
     </ul>
+
+    <div class="voorz">
+      <figure class="groot"><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364dd3cacdd9117848d9b.jpg" alt="Het gemeenschappelijke zwembad van Domaine de Lanzac bij zonsondergang, met ligbedden en pergolas" loading="lazy"><figcaption>Het grote zwembad</figcaption></figure>
+      <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364dd436f78fefb566d47.jpg" alt="Loungebar Studio 46 met barkrukken, flessenwand en muurschildering" loading="lazy"><figcaption>Loungebar Studio 46</figcaption></figure>
+      <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364ddf9a985d42cd31b6a.jpg" alt="Restaurant Le Merigou met gedekte tafels en bloemenwand" loading="lazy"><figcaption>Restaurant Le Merigou</figcaption></figure>
+      <figure><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364de989628c77a3ae118.jpg" alt="Loungeruimte met fauteuils, banken en jazzmuurschildering" loading="lazy"><figcaption>De lounge</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -890,6 +909,18 @@
                   border:1px solid var(--line);background:var(--greybg)}
   .galerij img{display:block;width:100%;height:100%;object-fit:cover}
 
+  /* Algemene voorzieningen */
+  .voorz{display:grid;grid-template-columns:1fr;gap:14px;margin-top:28px}
+  @media(min-width:640px){.voorz{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.voorz{grid-template-columns:2fr 1fr 1fr}
+    .voorz .groot{grid-row:span 2}}
+  .voorz figure{position:relative;margin:0;border-radius:14px;overflow:hidden;
+                border:1px solid var(--line);background:var(--greybg);aspect-ratio:16/10}
+  .voorz .groot{aspect-ratio:auto;min-height:260px}
+  .voorz img{display:block;width:100%;height:100%;object-fit:cover}
+  .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
+       font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
+
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}
   .ico.ok::before{content:"\2713"}
@@ -1177,6 +1208,18 @@
   .galerij figure{position:relative;margin:0;aspect-ratio:3/2;border-radius:14px;overflow:hidden;
                   border:1px solid var(--line);background:var(--greybg)}
   .galerij img{display:block;width:100%;height:100%;object-fit:cover}
+
+  /* Algemene voorzieningen */
+  .voorz{display:grid;grid-template-columns:1fr;gap:14px;margin-top:28px}
+  @media(min-width:640px){.voorz{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.voorz{grid-template-columns:2fr 1fr 1fr}
+    .voorz .groot{grid-row:span 2}}
+  .voorz figure{position:relative;margin:0;border-radius:14px;overflow:hidden;
+                border:1px solid var(--line);background:var(--greybg);aspect-ratio:16/10}
+  .voorz .groot{aspect-ratio:auto;min-height:260px}
+  .voorz img{display:block;width:100%;height:100%;object-fit:cover}
+  .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
+       font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
 
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}

@@ -260,6 +260,18 @@
                   border:1px solid var(--line);background:var(--greybg)}
   .galerij img{display:block;width:100%;height:100%;object-fit:cover}
 
+  /* Algemene voorzieningen */
+  .voorz{display:grid;grid-template-columns:1fr;gap:14px;margin-top:28px}
+  @media(min-width:640px){.voorz{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.voorz{grid-template-columns:2fr 1fr 1fr}
+    .voorz .groot{grid-row:span 2}}
+  .voorz figure{position:relative;margin:0;border-radius:14px;overflow:hidden;
+                border:1px solid var(--line);background:var(--greybg);aspect-ratio:16/10}
+  .voorz .groot{aspect-ratio:auto;min-height:260px}
+  .voorz img{display:block;width:100%;height:100%;object-fit:cover}
+  .voorz figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;
+       font-size:.88rem;font-weight:600;background:linear-gradient(transparent,rgba(20,24,20,.8))}
+
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}
   .ico.ok::before{content:"\2713"}
