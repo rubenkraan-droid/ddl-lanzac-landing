@@ -306,14 +306,12 @@
   }
   .schuifhint{display:none}
 
-  /* Alleen wanneer GHL de pagina in een smalle kolom perst terwijl het
-     scherm breed is: breek uit naar de vensterbreedte. Staat de sectie in
-     de builder al op volle breedte, dan doet deze regel niets. */
+  /* GHL perst de pagina in een smalle kolom. Op schermen vanaf 900px
+     breken we uit naar de vensterbreedte. Op telefoons gebeurt dit niet,
+     daar is de kolom al zo breed als het scherm. */
   @media(min-width:900px){
-    @container (max-width:760px){
-      nav,.vw-banner,section,footer{width:100vw;max-width:100vw;
-        margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
-    }
+    nav,.vw-banner,section,footer{width:100vw;max-width:100vw;
+      margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
   }
 </style>
 </head>
