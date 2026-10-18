@@ -298,9 +298,10 @@
   .vw-lijst li::before,.fac li::before{content:"\2713"}
   img,svg,video,iframe,table{max-width:100%}
   *,*::before,*::after{box-sizing:border-box}
-  /* Losse blokken: zelfde donkere ondergrond zonder het achtergrond-div */
+  /* Losse blokken: zelfde donkere ondergrond zonder het achtergrond-div.
+     Alleen h2 wit; h3 staat in de witte kaart en blijft donker. */
   .cta-vlak{background:#1B2A14;color:#fff}
-  .cta-vlak h2,.cta-vlak h3{color:#fff}
+  .cta-vlak > .container > h2{color:#fff}
 </style>
 
 
