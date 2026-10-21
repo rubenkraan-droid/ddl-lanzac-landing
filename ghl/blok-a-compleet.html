@@ -264,7 +264,10 @@
     body{padding-bottom:84px}
   }
 
-  /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen */
+  /* Mobiel: beeldenreeksen horizontaal schuifbaar in plaats van eindeloos stapelen.
+     De hint staat bewust voor de container-query: gelijke specificiteit, dus de
+     laatste regel won en de hint bleef altijd verborgen. */
+  .schuifhint{display:none;font-size:.82rem;color:var(--muted);margin-top:10px}
   @container (max-width:700px){
     .galerij,.voorz,.parkband,.droom,.zeker,.woningen{
       display:flex!important;gap:12px;overflow-x:auto;overflow-y:hidden;
@@ -277,7 +280,6 @@
     .galerij figure,.voorz figure,.parkband .foto{aspect-ratio:3/2}
     .schuifhint{display:block}
   }
-  .schuifhint{display:none}
 
   /* GHL zet de pagina in een rij met eigen binnenmarges. Uitbreken met
      100vw gaf witte randen, want 100vw telt de scrollbalk mee en de kolom
