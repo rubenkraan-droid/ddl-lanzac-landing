@@ -1,0 +1,53 @@
+LOSSE SNIPPET OM ALLEEN DE ACHTERGRONDFOTO VAN DE HERO TE WISSELEN
+==================================================================
+Plak dit als APART Custom Code-element in GHL, ergens onder blok A.
+Blok A zelf hoeft er niet uit. Wil je later een andere foto, dan pas
+je alleen dit kleine blokje aan.
+
+Vervang NUMMER-URL door de regel van de foto die je kiest (zie onder).
+
+<style>
+  .hero-bg{background-image:url('NUMMER-URL')!important}
+</style>
+
+
+DE URL PER KEUZE
+----------------
+1  dronefoto over de heuvelrand, wolken over de vallei
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d41f9a985d42cb585d7.jpg
+
+2  gedekte tafel onder het overdekte terras
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d2f5b21f8436678737f.jpg
+
+3  terras bij avond, met verlichting onder de overkapping
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d415b21f843667874a7.jpg
+
+4  privezwembad met travertin terras
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d39b3c1e3eb1920c014.jpg
+
+5  luchtfoto van het park op de heuveltop (de hero van variant A)
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3dcd7225ed378ad17d.jpg
+
+6  het park vanuit de lucht in avondlicht
+   https://images.leadconnectorhq.com/image/f_webp/q_82/r_1400/u_https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5df7d61a0f0480506211eb.png
+
+7  gezin in het privezwembad
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3cf9a985d42cb58566.jpg
+
+8  straat op het park met de stenen woningen
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad20d3d86f4a10b2f9d312a.jpg
+
+9  restaurant Le Merigou
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad364ddf9a985d42cd31b6a.jpg
+
+10 het grote zwembad bij zonsondergang (de huidige)
+   https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6ad36a05989628c77a3b5163.jpg
+
+
+WIL JE DE DONKERLAAG LICHTER OF DONKERDER?
+------------------------------------------
+Zet dit erbij in hetzelfde blokje. Hoger getal is donkerder.
+
+<style>
+  .hero-overlay{background:linear-gradient(180deg,rgba(18,26,14,.30) 0%,rgba(18,26,14,.68) 100%)!important}
+</style>
